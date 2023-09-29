@@ -4,7 +4,7 @@ import Header from '../components/Header'
 
 const MainRootLayout = () => {
   return (
-    <div>
+    <div className='bg-bodyDgColor min-h-screen font-releway'>
         <Header/>
         <main>
             <Outlet/>
