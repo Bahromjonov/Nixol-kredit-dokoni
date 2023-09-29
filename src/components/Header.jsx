@@ -17,7 +17,7 @@ const Header = () => {
                     <ul className='flex space-x-5' >
                         {/* Hard icon */}
                         <li>
-                            <button className='relative'>
+                            <button onClick={(() => navigate('heart'))} className='relative'>
                                 <div className='w-4 h-4 bg-green-500 rounded-full absolute -right-2 -top-1 flex justify-center items-center'>
                                     <span className='text-10'>0</span>
                                 </div>
