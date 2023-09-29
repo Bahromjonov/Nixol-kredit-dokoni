@@ -14,6 +14,9 @@ export default {
       },
       fontFamily:{
         'releway':'releway,"sans-serif'
+      },
+      fontSize:{
+        '10':'10px'
       }
     },
   },
