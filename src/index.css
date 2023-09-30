@@ -6,6 +6,12 @@
   .main-container {
     @apply w-full max-w-1240 mx-auto px-5
   }
+  .main-link{
+    @apply font-medium bg-brColor text-white py-2 px-5 rounded-lg duration-200 
+  }
+  .hamburger{
+    @apply w-4 h-0.5  rounded-full bg-black  
+  }
 }
 /* 
 @layer base {
@@ -13,3 +19,8 @@
     @apply 
   }
 }  */
+
+.b:hover .hamburger{
+  background-color: #2DBF5B;
+  
+}
