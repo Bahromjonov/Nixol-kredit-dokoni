@@ -4,9 +4,9 @@ import Header from '../components/Header'
 
 const MainRootLayout = () => {
   return (
-    <div className='bg-bodyDgColor min-h-screen font-releway'>
+    <div className='bg-bodyDgColor min-h-screen font-releway flex flex-col '>
         <Header/>
-        <main>
+        <main className='grow'>
             <Outlet/>
         </main>
     </div>

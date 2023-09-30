@@ -2,7 +2,12 @@ import React from 'react'
 
 const Basket = () => {
   return (
-    <div className='text-5xl text-black'>Basket</div>
+    <section className='main-container text-center  pt-10'>
+      <div>
+<p className=''>Savatda hozircha mahsulot yoʻq</p>
+      </div>
+
+    </section>
   )
 }
 

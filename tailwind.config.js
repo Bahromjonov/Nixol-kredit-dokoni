@@ -13,7 +13,7 @@ export default {
         'bodyDgColor':'#F3F6FC'
       },
       fontFamily:{
-        'releway':'releway,"sans-serif'
+        'releway': ['Raleway', "sans-serif"]
       },
       fontSize:{
         '10':'10px'
