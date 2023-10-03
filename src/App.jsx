@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import MainRouter from './layouts/MainRootLayout'
 import Basket from './pages/Basket'
 import Heart from './pages/Heart'
+import Smartfonlar from './components/Smartfonlar'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path='/basket' element={<Basket/>} />
         <Route path='/heart' element={<Heart/>} />
+        <Route path='/smartfonlar' element={<Smartfonlar/>} />
       </Route>
     )
   )

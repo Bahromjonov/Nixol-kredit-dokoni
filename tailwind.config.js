@@ -14,7 +14,7 @@ export default {
         'brColor':'#2DBF5B'
       },
       fontFamily:{
-        'releway': ['Raleway', "sans-serif"]
+        'Inter': ['Inter', "sans-serif"]
       },
       fontSize:{
         '10':'10px'
