@@ -26,13 +26,13 @@ export default () => {
     >
       <div className=''>
           <SwiperSlide>
-            <img className='w-full rounded-lg ' src={img} alt="" />
+            <img height={500} className='w-full rounded-lg ' src={img} alt="maishiy texnikalar rasimi" />
           </SwiperSlide>
           <SwiperSlide>
-            <img className='w-full rounded-lg ' src={img2} alt="" />
+            <img height={500} className='w-full rounded-lg ' src={img2} alt="noutboklar rasimi" />
           </SwiperSlide>
           <SwiperSlide>
-            <img className='w-full rounded-lg ' src={img3} alt="" />
+            <img height={500} className='w-full rounded-lg ' src={img3} alt="qol soatlar rasimi" />
           </SwiperSlide>
      
       </div>
