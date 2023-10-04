@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { Component } from 'react'
+import Swiper from '../components/Swiper'
 
 const Home = () => {
   return (
-    <section className='main-container'>Home </section>
+    <div className='main-container'>
+      <Swiper />
+    </div>
   )
 }
 

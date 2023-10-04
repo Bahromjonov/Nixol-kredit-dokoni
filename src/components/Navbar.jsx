@@ -3,22 +3,22 @@ import { Link, NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <nav className='main-container py-2'>
-        <ul className='flex items-center justify-between'>
+    <nav className='main-container py-2 nav'>
+        <ul className='flex items-center justify-between font-bold'>
             <li>
-                <NavLink to='smartfonlar' className='font-medium '>Smartfonlar</NavLink>
+                <NavLink to='smartfonlar' className=' '>Smartfonlar</NavLink>
             </li>
             <li>
-                <NavLink className='font-medium '>Noutbuklar</NavLink>
+                <NavLink to='noutboklar' className=' '>Noutbuklar</NavLink>
             </li>
             <li>
-                <NavLink className='font-medium '>Maishiy taxnikalar</NavLink>
+                <NavLink to='maishiyTexnikalar' className=' '>Maishiy taxnikalar</NavLink>
             </li>
             <li>
-                <NavLink className='font-medium '>Mebellar</NavLink>
+                <NavLink to='mebellar' className=' '>Mebellar</NavLink>
             </li>
             <li>
-                <NavLink className='font-medium '>Qurilish asboblari</NavLink>
+                <NavLink to='qurilishAsboblari' className=' '>Qurilish asboblari</NavLink>
             </li>
         </ul>
     </nav>

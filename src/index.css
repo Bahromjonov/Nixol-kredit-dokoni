@@ -24,3 +24,9 @@
   background-color: #2DBF5B;
   
 }
+nav a.active{
+  @apply text-brColor 
+}
+nav a:hover{
+  @apply  text-black duration-100 opacity-60
+}
