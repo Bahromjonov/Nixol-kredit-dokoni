@@ -7,6 +7,7 @@ import Smartfonlar from './pages/Smartfonlar'
 import Noutboklar from './pages/Noutboklar'
 import MaishiyTexnikalar from './pages/MaishiyTexnikalar'
 import QurilishAsboblari from './pages/QurilishAsboblari'
+import Aloqa from './pages/Aloqa'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <Route path='/maishiyTexnikalar' element={<MaishiyTexnikalar/>} />
         <Route path='/mebellar' element={<MaishiyTexnikalar/>} />
         <Route path='/qurilishAsboblari' element={<QurilishAsboblari/>} />
+        <Route path='/aloqa' element={<Aloqa/>} />
       </Route>
     )
   )
