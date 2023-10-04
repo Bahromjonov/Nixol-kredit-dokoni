@@ -8,7 +8,7 @@ const Aloqa = () => {
             </div>
             {/* Telefon no'merlari */}
             <div className='space-y-4'>
-                <a href='tel:+998948079737'  className='text-brColor text-2xl font-bold '>+998 93 807 97 37</a>
+                <a href='tel:+998948079737'  className='text-brColor text-2xl font-bold '>+998 94 807 97 37</a>
                 <p className='font-medium text-xl '><span className='font-bold '>Manzil:</span> <br /> Andijon viloyati Baliqchi tumani Xo'jabod shaxarchasi </p>
                 <p className='font-medium text-xl'><span className='font-bold'>Ish vaqtlari:</span> 8:00 - 18:00 </p>
             </div>
