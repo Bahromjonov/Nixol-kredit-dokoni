@@ -1,5 +1,12 @@
 // Imgs
 import img from './assets/images/clock.webp'
+import img2 from './assets/images/dazmol.webp'
+import img3 from './assets/images/kalonka.webp'
+import img4 from './assets/images/klavitura.webp'
+import img5 from './assets/images/sichqoncha.webp'
+// import img6 from './assets/images/simsizQuloqchin.webp'
+// import img7 from './assets/images/telivizor.webp'
+// import img8 from './assets/images/washingMachine.webp'
 
 export const mixedData = [
     {
@@ -15,7 +22,7 @@ export const mixedData = [
       title: "Hoco Y12 Ultra Qora Smart soat",
       cost:"399 000 so'm",
       text: "Brend: Hoco Model:Y12 Ultra",
-      img:img,
+      img:img2,
     },
    
     {
@@ -23,7 +30,7 @@ export const mixedData = [
       title: "Hoco Y12 Ultra Qora Smart soat",
       cost:"399 000 so'm",
       text: "Brend: Hoco Model:Y12 Ultra",
-      img:img,
+      img:img3,
     },
    
     {
@@ -31,7 +38,7 @@ export const mixedData = [
       title: "Hoco Y12 Ultra Qora Smart soat",
       cost:"399 000 so'm",
       text: "Brend: Hoco Model:Y12 Ultra",
-      img:img,
+      img:img4,
     },
    
     {
@@ -39,7 +46,7 @@ export const mixedData = [
       title: "Hoco Y12 Ultra Qora Smart soat",
       cost:"399 000 so'm",
       text: "Brend: Hoco Model:Y12 Ultra",
-      img:img,
+      img:img5,
     },
    
     

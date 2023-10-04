@@ -20,10 +20,7 @@
   }
 }  */
 
-.b:hover .hamburger{
-  background-color: #2DBF5B;
-  
-}
+
 nav a.active{
   @apply text-brColor 
 }
