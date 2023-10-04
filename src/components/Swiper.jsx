@@ -14,7 +14,7 @@ import img3 from '../assets/images/swiper-image3.png'
 
 export default () => {
     return (
-        <Swiper className='py-5'
+        <Swiper className='py-10'
             // install Swiper modules
             modules={[Navigation, Pagination, Scrollbar, A11y,Autoplay]}
             spaceBetween={50}
