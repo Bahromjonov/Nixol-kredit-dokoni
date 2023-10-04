@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       maxWidth:{
-        '1240':'1240px'
+        '1440':'1440px'
       },
       colors:{
         'bodyDgColor':'#F3F6FC',
