@@ -4,7 +4,7 @@ import { mixedData } from '../data'
 const MixedData = () => {
   return (
     <div >
-    <ul className='grid grid-cols-5 gap-5 flex-wrap'>
+    <ul className='grid grid-cols-5 gap-5 '>
        {
          mixedData.map((e, id) => {
            return (
