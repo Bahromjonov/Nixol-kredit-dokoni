@@ -19,15 +19,15 @@ export const mixedData = [
    
     {
       id: 2,
-      title: "Hoco Y12 Ultra Qora Smart soat",
-      cost:"399 000 so'm",
-      text: "Brend: Hoco Model:Y12 Ultra",
+      title: "ARSHIA AS1910-9003 dazmoli",
+      cost:"699 000 so'm",
+      text: "Brend: Microlab Model B70",
       img:img2,
     },
    
     {
       id: 3,
-      title: "Hoco Y12 Ultra Qora Smart soat",
+      title: "Microlab B70 qora Kompyuter akustikasi",
       cost:"399 000 so'm",
       text: "Brend: Hoco Model:Y12 Ultra",
       img:img3,
@@ -35,17 +35,17 @@ export const mixedData = [
    
     {
       id: 4,
-      title: "Hoco Y12 Ultra Qora Smart soat",
-      cost:"399 000 so'm",
-      text: "Brend: Hoco Model:Y12 Ultra",
+      title: "T-Wolf TF 200 USB klaviatura va sichqoncha to‘plami",
+      cost:"129 000 so'm",
+      text: "Brend: T-Wolf Model: TF200",
       img:img4,
     },
    
     {
       id: 5,
-      title: "Hoco Y12 Ultra Qora Smart soat",
-      cost:"399 000 so'm",
-      text: "Brend: Hoco Model:Y12 Ultra",
+      title: "Metoo E0SE simsiz sichqonchasi",
+      cost:"49 000 so'm",
+      text: "Brend: Metoo Model: E0SE",
       img:img5,
     },
    

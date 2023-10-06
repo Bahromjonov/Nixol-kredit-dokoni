@@ -1,5 +1,7 @@
-.b:hover .hamburger{
-    background-color: #2DBF5B;
-    
-  }
+/* MixedData.css */
+.b:hover .hamburger,
+.liked .hamburger {
+  background-color: #2DBF5B; /* Qizil rang */
+}
+
   
