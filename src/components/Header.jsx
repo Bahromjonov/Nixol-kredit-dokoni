@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import React from 'react'
+import { Link, } from 'react-router-dom'
+
 // Imgs
 import img from '../assets/images/Nixol.png'
-import search from '../assets/icons/search-icon.png'
 import Navbar from './Navbar'
 
 
@@ -14,7 +14,7 @@ const Header = () => {
             <div className='main-container flex justify-between items-center'>
                 <div className='flex items-center space-x-6'>
                     <Link >
-                        <img width={100} height={50} className='' src={img} alt="Nixol image" />
+                        <img width={100} height={50}  src={img} alt="Nixol image" />
                     </Link>
                 </div>
                 <ul className='flex space-x-5 mr-2' >

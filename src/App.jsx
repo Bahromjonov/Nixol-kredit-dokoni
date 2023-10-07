@@ -1,6 +1,8 @@
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
-import Home from './pages/Home'
+
 import MainRouter from './layouts/MainRootLayout'
+
+import Home from './pages/Home'
 import Basket from './pages/Basket'
 import Heart from './pages/Heart'
 import Smartfonlar from './pages/Smartfonlar'
@@ -10,7 +12,7 @@ import QurilishAsboblari from './pages/QurilishAsboblari'
 import Aloqa from './pages/Aloqa'
 
 function App() {
-
+  
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path='/' element={<MainRouter />}>
