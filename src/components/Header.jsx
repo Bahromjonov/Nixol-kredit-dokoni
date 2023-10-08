@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link, } from 'react-router-dom'
 
 // Imgs
@@ -8,9 +8,29 @@ import Navbar from './Navbar'
 
 const Header = ({ cartCount }) => {
 
+    const [scrolled, setScrolled] = useState(false);
 
+  // Add a scroll event listener
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 150) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      // Clean up the event listener when the component unmounts
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  
     return (
-        <header className='py-5  bg-white '>
+        <header className={`py-5 bg-white ${scrolled ? 'fixed top-0 left-0 w-full  duration-1000 shadow-md' : ''} z-10`}>
             <div className='main-container flex justify-between items-center'>
                 <div className='flex items-center space-x-6'>
                     <Link >
