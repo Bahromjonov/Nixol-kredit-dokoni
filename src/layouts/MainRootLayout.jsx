@@ -11,7 +11,7 @@ const MainRootLayout = () => {
   }, []);
   
   return (
-    <div className='bg-bodyDgColor min-h-screen font-Inter flex flex-col '>
+    <div className='bg-bodyDgColor min-h-screen font-Inter flex flex-col scroll-smooth'>
         <Header cartCount={cartCount}/>
         <main className='grow'>
             <Outlet/>
