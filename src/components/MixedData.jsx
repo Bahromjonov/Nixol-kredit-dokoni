@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { mixedData } from '../data';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 const MixedData = () => {
   const [cardStates, setCardStates] = useState(Array(mixedData.length).fill(false));
@@ -22,6 +24,7 @@ const MixedData = () => {
 
   useEffect(() => {
     localStorage.setItem('likedCards', JSON.stringify(likedCards));
+    Aos.init()
   }, [likedCards]);
 
   return (
@@ -29,7 +32,12 @@ const MixedData = () => {
       <ul className='grid grid-cols-4 gap-5 '>
         {mixedData.map((e, id) => {
           return (
+            <div data-aos="fade-up"
+            data-aos-anchor-placement="center">
+
             <li key={id} className={`bg-white px-6 py-10  rounded-lg hover:shadow-lg relative ${cardStates[id] ? 'liked' : 'not-liked'}`}>
+
+      
               <div className='flex justify-center'>
                 <img
                   className='mb-5 w-200 h-200 '
@@ -94,6 +102,7 @@ const MixedData = () => {
               </svg>
 
             </li>
+       </div>
           );
         })}
       </ul>
