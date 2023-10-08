@@ -10,13 +10,14 @@ import Noutboklar from './pages/Noutboklar'
 import MaishiyTexnikalar from './pages/MaishiyTexnikalar'
 import QurilishAsboblari from './pages/QurilishAsboblari'
 import Aloqa from './pages/Aloqa'
+import { useEffect, useState } from 'react'
 
 function App() {
-  
+
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path='/' element={<MainRouter />}>
-        <Route index element={<Home />} />
+        <Route index  element={<Home />} />
         <Route path='/basket' element={<Basket/>} />
         <Route path='/heart' element={<Heart/>} />
         <Route path='/smartfonlar' element={<Smartfonlar/>} />

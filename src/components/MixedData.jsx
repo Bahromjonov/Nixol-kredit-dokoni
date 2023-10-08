@@ -1,15 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { mixedData } from '../data';
-import '../Css/style.css';
 
 const MixedData = () => {
   const [cardStates, setCardStates] = useState(Array(mixedData.length).fill(false));
   const [likedCards, setLikedCards] = useState([]);
 
-  useEffect(() => {
-    const storedLikedCards = JSON.parse(localStorage.getItem('likedCards')) || [];
-    setLikedCards(storedLikedCards);
-  }, []);
 
   const toggleCard = (index) => {
     const newCardStates = [...cardStates];
@@ -35,6 +30,7 @@ const MixedData = () => {
         {mixedData.map((e, id) => {
           return (
             <li key={id} className={`bg-white p-5 rounded-lg hover:shadow-lg relative ${cardStates[id] ? 'liked' : 'not-liked'}`}>
+             <div className='flex justify-center'>
               <img
                 width={200}
                 height={200}
@@ -42,9 +38,10 @@ const MixedData = () => {
                 src={e.img}
                 alt={e.title}
               />
+             </div>
               <button
                 onClick={() => toggleCard(id)}
-                className={`card-toggle-button ${cardStates[id] ? 'liked' : 'not-liked'}`}
+                className={`card-toggle-button absolute top-5 right-5 ${cardStates[id] ? 'liked' : 'not-liked'}`}
               >
                 {cardStates[id] ? (
                  <svg

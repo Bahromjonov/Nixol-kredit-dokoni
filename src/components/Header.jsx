@@ -6,7 +6,7 @@ import img from '../assets/images/Nixol.png'
 import Navbar from './Navbar'
 
 
-const Header = () => {
+const Header = ({ cartCount }) => {
 
 
     return (
@@ -22,7 +22,7 @@ const Header = () => {
                     <li>
                         <Link to='heart' className='relative'>
                             <div className='w-4 h-4 bg-green-500 rounded-full absolute -right-2 -top-1 flex justify-center items-center'>
-                                <span className='text-10'>0</span>
+                                <span className='text-10'>{cartCount}</span>
                             </div>
                             <svg className='hover:text-green-400 duration-100' fill="currentColor" height="22px" width="22px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 viewBox="0 0 471.701 471.701" xml:space="preserve">
