@@ -4,9 +4,9 @@ import img2 from './assets/images/dazmol.webp'
 import img3 from './assets/images/kalonka.webp'
 import img4 from './assets/images/klavitura.webp'
 import img5 from './assets/images/sichqoncha.webp'
-// import img6 from './assets/images/simsizQuloqchin.webp'
-// import img7 from './assets/images/telivizor.webp'
-// import img8 from './assets/images/washingMachine.webp'
+import img6 from './assets/images/simsizQuloqchin.webp'
+import img7 from './assets/images/telivizor-img.webp'
+import img8 from './assets/images/washingMachine.webp'
 
 export const mixedData = [
     {
@@ -48,6 +48,34 @@ export const mixedData = [
       text: "Brend: Metoo Model: E0SE",
       img:img5,
     },
+    {
+      id: 6,
+      title: "ANC Airpods Pro simsiz quloqchinlari. BESTSELLER",
+      cost:"199 000 so'm",
+      text: "Model: ANC Airpods Pro",
+      img:img6,
+    },
+    {
+      id: 7,
+      title: "Телевизор Moonx 43S800 Smart TV Android. BESTSELLER!",
+      cost:"2 399 000 so'm",
+      text: "Brend: MOONX Model: 43S800",
+      img:img7,
+    },
+    {
+      id: 8,
+      title: "Beko WRE6512BWW 6 kg kir yuvish mashinasi",
+      cost:"3 129 000 so'm",
+      text: "Brend: Beko Model: WRE6512BWW",
+      img:img8,
+    },
+    // {
+    //   id: ,
+    //   title: "",
+    //   cost:"",
+    //   text: "",
+    //   img:img5,
+    // },
    
     
   ];

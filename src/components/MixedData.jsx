@@ -32,9 +32,7 @@ const MixedData = () => {
             <li key={id} className={`bg-white p-5 rounded-lg hover:shadow-lg relative ${cardStates[id] ? 'liked' : 'not-liked'}`}>
              <div className='flex justify-center'>
               <img
-                width={200}
-                height={200}
-                className='mb-4'
+                className='mb-5 w-200 h-200 '
                 src={e.img}
                 alt={e.title}
               />

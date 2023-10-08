@@ -19,9 +19,10 @@ export default {
       fontSize:{
         '10':'10px'
       },
-      // spacing:{
-      //   '2':'2px'
-      // }
+      spacing:{
+        '200':'200px',
+        
+      }
     },
   },
   plugins: [],
