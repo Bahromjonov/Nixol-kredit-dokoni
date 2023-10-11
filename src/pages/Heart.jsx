@@ -38,7 +38,7 @@ const Heart = () => {
             <span className='block mb-5'>Mahsulotdagi {   <svg className='inline-block'
               width="20"
               height="20"
-              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/2000/svg"
               viewBox="0 0 122.88 107.39"
               >
               <path
@@ -72,7 +72,7 @@ const Heart = () => {
                     <svg
                  width="30"
                  height="30"
-                 xmlns="http://www.w3.org/2000/svg"
+                 xmlnsXlink="http://www.w3.org/2000/svg"
                  viewBox="0 0 122.88 107.39"
                  >
                  <path

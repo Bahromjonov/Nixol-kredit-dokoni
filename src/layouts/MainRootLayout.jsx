@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Outlet } from 'react-router-dom'
 import Header from '../components/Header'
 
-const MainRootLayout = () => {
+const MainRootLayout = ({likedCards, setLikedCards}) => {
   const [cartCount, setCartCount] = useState(0);
 
   useEffect(() => {
@@ -12,7 +12,7 @@ const MainRootLayout = () => {
   
   return (
     <div className='bg-bodyDgColor min-h-screen font-Inter flex flex-col scroll-smooth'>
-        <Header cartCount={cartCount}/>
+        <Header cartCount={cartCount} likedCards={likedCards} setLikedCards={setLikedCards}/>
         <main className='grow'>
             <Outlet/>
         </main>

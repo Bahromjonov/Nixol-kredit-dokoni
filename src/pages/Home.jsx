@@ -2,11 +2,11 @@ import React from 'react'
 import MixedData from '../components/MixedData'
 import Swiper from '../components/Swiper'
 
-const Home = () => {
+const Home = ({likedCards, setLikedCards}) => {
   return (
     <div className='main-container'>
       <Swiper />
-     <MixedData/>
+     <MixedData likedCards={likedCards} setLikedCards={setLikedCards}/>
     </div>
   )
 }

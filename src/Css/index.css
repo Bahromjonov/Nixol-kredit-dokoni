@@ -31,3 +31,7 @@ nav a:hover{
 .liked .hamburger {
   background-color: #2DBF5B; 
 }
+.start{
+  background-color: #000;
+  font-size: 500px;
+}

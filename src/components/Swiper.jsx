@@ -16,7 +16,7 @@ export default () => {
     return (
         <Swiper className='py-10'
             // install Swiper modules
-            modules={[Navigation, Pagination, Scrollbar, A11y,Autoplay]}
+            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
             spaceBetween={50}
             slidesPerView={1}
             autoplay={{
@@ -28,7 +28,7 @@ export default () => {
             pagination={{ clickable: true }}
 
         >
-            <div className=''>
+            <Swiper>
                 <SwiperSlide>
                     <img className='w-full  rounded-lg ' src={img} alt="maishiy texnikalar rasimi" />
                 </SwiperSlide>
@@ -39,7 +39,11 @@ export default () => {
                     <img className='w-full  rounded-lg ' src={img3} alt="qol soatlar rasimi" />
                 </SwiperSlide>
 
-            </div>
+                <span className='start' slot="container-start">Container Start</span>
+                <span slot="container-end">Container End</span>
+                <span slot="wrapper-start">Wrapper Start</span>
+                <span slot="wrapper-end">Wrapper End</span>
+            </Swiper>
         </Swiper>
     );
 };

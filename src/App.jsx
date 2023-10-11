@@ -14,10 +14,13 @@ import { useEffect, useState } from 'react'
 
 function App() {
 
+  const [likedCards, setLikedCards] = useState([]);
+
+
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path='/' element={<MainRouter />}>
-        <Route index  element={<Home />} />
+      <Route path='/' element={<MainRouter likedCards={likedCards} setLikedCards={setLikedCards} />}>
+        <Route index  element={<Home likedCards={likedCards} setLikedCards={setLikedCards} />} />
         <Route path='/basket' element={<Basket/>} />
         <Route path='/heart' element={<Heart/>} />
         <Route path='/smartfonlar' element={<Smartfonlar/>} />
