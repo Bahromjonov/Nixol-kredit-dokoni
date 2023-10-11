@@ -4,6 +4,7 @@ import { Link, } from 'react-router-dom'
 // Imgs
 import img from '../assets/images/Nixol.png'
 import Navbar from './Navbar'
+import heart from '../assets/icons/heart-icon.svg'
 
 
 const Header = ({ likedCards }) => {
@@ -21,9 +22,8 @@ const Header = ({ likedCards }) => {
         };
 
         window.addEventListener('scroll', handleScroll);
-
+      
         return () => {
-            // Clean up the event listener when the component unmounts
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);

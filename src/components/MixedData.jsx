@@ -22,6 +22,7 @@ const MixedData = ({likedCards, setLikedCards}) => {
     }
   };
 
+
   useEffect(() => {
     localStorage.setItem('likedCards', JSON.stringify(likedCards));
     Aos.init()
@@ -39,10 +40,7 @@ const MixedData = ({likedCards, setLikedCards}) => {
                 <div className='flex justify-center items-start relative'>
                   
                   <div>
-                    <img
-                      className='mb-5 w-200 h-200 flex-grow'
-                      src={e.img}
-                      alt={e.title}
+                    <img className='mb-5 w-200 h-200 flex-grow' src={e.img} alt={e.title}
                     />
                   </div>
                   {/* Toggle like */}
@@ -83,7 +81,7 @@ const MixedData = ({likedCards, setLikedCards}) => {
                     Muddatli to'lov
                   </button>
                   {/* Basket img */}
-                  <button>
+                  <button onClick={() => setLikedCards([...likedCards, id])}>
                     <svg width="32" height="32" viewBox="0 0 22 22" fill="none" xmlnsXlink="http://www.w3.org/2000/svg">
                       <path d="M21.0591 4.05197H7.06851C6.73335 4.05197 6.5357 4.2883 6.62163 4.63635L8.64117 11.5844C8.68413 11.7649 8.8646 11.8981 9.08804 11.8981H19.0869C19.3103 11.8981 19.4908 11.7649 19.5337 11.5844L21.506 4.63635C21.5834 4.40861 21.463 4.05197 21.0591 4.05197ZM18.7732 10.9571H9.44468L9.04077 9.56917H19.1771L18.7732 10.9571ZM19.4005 8.66683H8.75718L8.35757 7.27893H19.8044L19.4005 8.66683ZM20.0709 6.33791H8.09976L7.69585 4.95002H20.4791L20.0709 6.33791Z" fill="#222222" stroke="#222222" strokeWidth="0.2" />
                       <path d="M4.60195 1.04414C4.55898 0.820703 4.37852 0.6875 4.15508 0.6875H0.472656V1.58555H3.78984L6.84062 13.8703C6.88359 14.0938 7.06406 14.227 7.2875 14.227H19.1254V13.2859H7.64844L4.60195 1.04414Z" fill="#222222" stroke="#222222" strokeWidth="0.2" />

@@ -16,12 +16,17 @@ function App() {
 
   const [likedCards, setLikedCards] = useState([]);
 
+  const removeCard = (cardId) => {
+    const updatedLikedCards = likedCards.filter((id) => id !== cardId);
+    setLikedCards(updatedLikedCards);
+  };
+  
 
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path='/' element={<MainRouter likedCards={likedCards} setLikedCards={setLikedCards} />}>
         <Route index  element={<Home likedCards={likedCards} setLikedCards={setLikedCards} />} />
-        <Route path='/basket' element={<Basket/>} />
+        <Route path='/basket' element={<Basket likedCards={likedCards} removeCard={removeCard}/>} />
         <Route path='/heart' element={<Heart/>} />
         <Route path='/smartfonlar' element={<Smartfonlar/>} />
         <Route path='/noutboklar' element={<Noutboklar/>} />
