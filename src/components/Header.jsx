@@ -4,8 +4,6 @@ import { Link, } from 'react-router-dom'
 // Imgs
 import img from '../assets/images/Nixol.png'
 import Navbar from './Navbar'
-import heart from '../assets/icons/heart-icon.svg'
-
 
 const Header = ({ likedCards }) => {
 

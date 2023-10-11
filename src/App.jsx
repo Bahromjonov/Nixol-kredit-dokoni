@@ -27,7 +27,7 @@ function App() {
       <Route path='/' element={<MainRouter likedCards={likedCards} setLikedCards={setLikedCards} />}>
         <Route index  element={<Home likedCards={likedCards} setLikedCards={setLikedCards} />} />
         <Route path='/basket' element={<Basket likedCards={likedCards} removeCard={removeCard}/>} />
-        <Route path='/heart' element={<Heart/>} />
+        <Route path='/heart' element={<Heart removeCard={removeCard}/>} />
         <Route path='/smartfonlar' element={<Smartfonlar/>} />
         <Route path='/noutboklar' element={<Noutboklar/>} />
         <Route path='/maishiyTexnikalar' element={<MaishiyTexnikalar/>} />

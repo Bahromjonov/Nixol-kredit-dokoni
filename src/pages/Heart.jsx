@@ -17,6 +17,11 @@ const Heart = () => {
     }
   };
 
+  const removeCardFromLiked = (cardId) => {
+    dislikeCard(cardId); // Mahsulotni "sevimli"dan olib tashlash
+    removeCardFromBasket(cardId); // Mahsulotni savatchadan olib tashlash
+  };
+
   const dislikeCard = (cardId) => {
     const updatedLikedCards = likedCards.filter((id) => id !== cardId);
     setLikedCards(updatedLikedCards);
@@ -83,7 +88,7 @@ const Heart = () => {
                  </svg>
                     </button>
                     <div className='space-y-4'>
-                      <h2 className='font-bold'>{e.title}</h2>
+                      <h2 onClick={() => removeCardFromLiked(cardId)} className='font-bold'>{e.title}</h2>
                       <span className='inline-block font-semibold text-brColor text-xl'>{e.cost}</span>
                       <p className='font-medium'>{e.text}</p>
                     </div>
