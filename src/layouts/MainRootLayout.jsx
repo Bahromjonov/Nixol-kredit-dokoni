@@ -14,7 +14,7 @@ const MainRootLayout = ({likedCards, setLikedCards}) => {
   return (
     <div className='bg-bodyDgColor min-h-screen font-Inter flex flex-col scroll-smooth'>
         <Header cartCount={cartCount} likedCards={likedCards} setLikedCards={setLikedCards}/>
-        <main className='grow'>
+        <main className='grow mb-10'>
             <Outlet/>
         </main>
         <Footer/>
