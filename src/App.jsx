@@ -10,23 +10,24 @@ import Noutboklar from './pages/Noutboklar'
 import MaishiyTexnikalar from './pages/MaishiyTexnikalar'
 import QurilishAsboblari from './pages/QurilishAsboblari'
 import Aloqa from './pages/Aloqa'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 function App() {
 
   const [likedCards, setLikedCards] = useState([]);
+  const [basket, setBasket ] = useState([])
 
   const removeCard = (cardId) => {
     const updatedLikedCards = likedCards.filter((id) => id !== cardId);
     setLikedCards(updatedLikedCards);
   };
-  
+ 
 
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path='/' element={<MainRouter likedCards={likedCards} setLikedCards={setLikedCards} />}>
+      <Route path='/' element={<MainRouter likedCards={likedCards} setLikedCards={setLikedCards} basket={basket} setBasket={setBasket}/>}>
         <Route index  element={<Home likedCards={likedCards} setLikedCards={setLikedCards} />} />
-        <Route path='/basket' element={<Basket likedCards={likedCards} removeCard={removeCard}/>} />
+        <Route path='/basket' element={<Basket likedCards={likedCards} removeCard={removeCard} basket={basket} setBasket={setBasket}/>} />
         <Route path='/heart' element={<Heart removeCard={removeCard}/>} />
         <Route path='/smartfonlar' element={<Smartfonlar/>} />
         <Route path='/noutboklar' element={<Noutboklar/>} />

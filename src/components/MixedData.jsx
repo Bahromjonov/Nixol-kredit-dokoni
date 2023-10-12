@@ -5,29 +5,45 @@ import 'aos/dist/aos.css'
 
 import heart from '../assets/icons/heart-icon.svg'
 
-const MixedData = ({likedCards, setLikedCards}) => {
+const MixedData = ({ likedCards, setLikedCards, basket, setBasket }) => {
   const [cardStates, setCardStates] = useState(Array(mixedData.length).fill(false));
 
   const toggleCard = (index) => {
-    const newCardStates = [...cardStates];
-    newCardStates[index] = !newCardStates[index];
-    setCardStates(newCardStates);
-
-    if (!likedCards.includes(index)) {
-      const updatedLikedCards = [...likedCards, index];
-      setLikedCards(updatedLikedCards);
-    } else {
-      const updatedLikedCards = likedCards.filter((id) => id !== index);
-      setLikedCards(updatedLikedCards);
+    try {
+      // Muammo yuz berish mumkin bo'lgan qismi
+      const newCardStates = [...cardStates];
+      newCardStates[index] = !newCardStates[index];
+      setCardStates(newCardStates);
+  
+      if (!likedCards.includes(index)) {
+        const updatedLikedCards = [...likedCards, index];
+        setLikedCards(updatedLikedCards);
+      } else {
+        const updatedLikedCards = likedCards.filter((id) => id !== index);
+        setLikedCards(updatedLikedCards);
+      }
+  
+      // LocalStoragega 'likedCards' ro'yxatini saqlash
+      localStorage.setItem('likedCards', JSON.stringify(likedCards));
+    } catch (error) {
+      console.error('toggleCard funktsiyasida xato: ', error);
     }
   };
+  
 
+  const openBasket = (index) => {
+    // Savatcha ochiladi
+    setBasket([...basket, index]);
+  };
 
   useEffect(() => {
-    localStorage.setItem('likedCards', JSON.stringify(likedCards));
-    Aos.init()
-  }, [likedCards]);
+    // LocalStoragedan 'likedCards' ro'yxatini olish
+    const storedLikedCards = JSON.parse(localStorage.getItem('likedCards')) || [];
+    setLikedCards(storedLikedCards);
 
+    // Aos initiatsiyasini chaqirish
+    Aos.init();
+  }, [setLikedCards])
   return (
     <div>
       <ul className='grid grid-cols-4 gap-5 '>
@@ -36,9 +52,9 @@ const MixedData = ({likedCards, setLikedCards}) => {
             <div key={id} data-aos="fade-up"
               data-aos-anchor-placement="top-center">
 
-              <li  className={`bg-white p-6 h-full max-h-[600px] rounded-lg hover:shadow-lg relative ${cardStates[id] ? 'liked' : 'not-liked'} flex flex-col justify-end`}>
+              <li className={`bg-white p-6 h-full max-h-[600px] rounded-lg hover:shadow-lg relative ${cardStates[id] ? 'liked' : 'not-liked'} flex flex-col justify-end`}>
                 <div className='flex justify-center items-start relative'>
-                  
+
                   <div>
                     <img className='mb-5 w-200 h-200 flex-grow' src={e.img} alt={e.title}
                     />
@@ -63,13 +79,13 @@ const MixedData = ({likedCards, setLikedCards}) => {
                         />
                       </svg>
                     ) : (
-                    <img className='w-8 h-8' src={heart} alt="basket" />
+                      <img className='w-8 h-8' src={heart} alt="basket" />
                     )}
                   </button>
 
                 </div>
                 {/* Data map */}
-                <div  className='space-y-4 mb-5'>
+                <div className='space-y-4 mb-5'>
                   <h2 className='font-bold'>{e.title}</h2>
                   <span className='inline-block font-semibold text-brColor text-xl'>{e.cost}</span>
                   <p className='font-medium '>{e.text}</p>
@@ -77,11 +93,11 @@ const MixedData = ({likedCards, setLikedCards}) => {
 
                 {/* installment payment */}
                 <div className='flex justify-between '>
-                  <button className='font-medium'>
+                  <button className='font-medium text-lg hover:text-brColor'>
                     Muddatli to'lov
                   </button>
                   {/* Basket img */}
-                  <button onClick={() => setLikedCards([...likedCards, id])}>
+                  <button onClick={() => openBasket(id)} className='basket'>
                     <svg width="32" height="32" viewBox="0 0 22 22" fill="none" xmlnsXlink="http://www.w3.org/2000/svg">
                       <path d="M21.0591 4.05197H7.06851C6.73335 4.05197 6.5357 4.2883 6.62163 4.63635L8.64117 11.5844C8.68413 11.7649 8.8646 11.8981 9.08804 11.8981H19.0869C19.3103 11.8981 19.4908 11.7649 19.5337 11.5844L21.506 4.63635C21.5834 4.40861 21.463 4.05197 21.0591 4.05197ZM18.7732 10.9571H9.44468L9.04077 9.56917H19.1771L18.7732 10.9571ZM19.4005 8.66683H8.75718L8.35757 7.27893H19.8044L19.4005 8.66683ZM20.0709 6.33791H8.09976L7.69585 4.95002H20.4791L20.0709 6.33791Z" fill="#222222" stroke="#222222" strokeWidth="0.2" />
                       <path d="M4.60195 1.04414C4.55898 0.820703 4.37852 0.6875 4.15508 0.6875H0.472656V1.58555H3.78984L6.84062 13.8703C6.88359 14.0938 7.06406 14.227 7.2875 14.227H19.1254V13.2859H7.64844L4.60195 1.04414Z" fill="#222222" stroke="#222222" strokeWidth="0.2" />

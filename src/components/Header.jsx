@@ -3,6 +3,7 @@ import { Link, } from 'react-router-dom'
 
 // Imgs
 import img from '../assets/images/Nixol.png'
+import Basket from '../pages/Basket'
 import Navbar from './Navbar'
 
 const Header = ({ likedCards }) => {
@@ -20,7 +21,7 @@ const Header = ({ likedCards }) => {
         };
 
         window.addEventListener('scroll', handleScroll);
-      
+
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
@@ -80,7 +81,7 @@ const Header = ({ likedCards }) => {
             </header>
 
             {/* //  */}
-            <header className={`${scrolled ? 'top-0': '-top-24'} w-full h-max transition-all duration-500 right-0 left-0 fixed bg-white z-20`}>
+            <header className={`${scrolled ? 'top-0' : '-top-24'} w-full h-max transition-all duration-500 right-0 left-0 fixed bg-white z-20`}>
                 <div className='main-container flex justify-between items-center'>
                     <div className='flex items-center space-x-6'>
                         <Link >

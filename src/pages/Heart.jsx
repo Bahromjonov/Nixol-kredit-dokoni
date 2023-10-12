@@ -19,7 +19,6 @@ const Heart = () => {
 
   const removeCardFromLiked = (cardId) => {
     dislikeCard(cardId); // Mahsulotni "sevimli"dan olib tashlash
-    removeCardFromBasket(cardId); // Mahsulotni savatchadan olib tashlash
   };
 
   const dislikeCard = (cardId) => {
