@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Outlet } from 'react-router-dom'
+import Footer from '../components/Footer';
 import Header from '../components/Header'
 
 const MainRootLayout = ({likedCards, setLikedCards}) => {
@@ -16,6 +17,7 @@ const MainRootLayout = ({likedCards, setLikedCards}) => {
         <main className='grow'>
             <Outlet/>
         </main>
+        <Footer/>
     </div>
   )
 }
