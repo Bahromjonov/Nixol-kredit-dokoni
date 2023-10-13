@@ -30,10 +30,10 @@ const Header = ({ likedCards }) => {
 
     return (
         <>
-            <header className='bg-white z-10'>
+            <header className='bg-white py-3 z-10'>
                 <div className='main-container flex justify-between items-center'>
                     <div className='flex items-center space-x-6'>
-                        <Link >
+                        <Link to='/'>
                             <img width={100} height={50} src={img} alt="Nixol image" />
                         </Link>
                     </div>
@@ -81,7 +81,7 @@ const Header = ({ likedCards }) => {
             </header>
 
             {/* //  */}
-            <header className={`${scrolled ? 'top-0' : '-top-24'} w-full h-max transition-all duration-500 right-0 left-0 fixed bg-white z-20`}>
+            <header className={`${scrolled ? 'top-0' : '-top-24'} w-full h-max transition-all duration-500 right-0 left-0 fixed bg-white z-20 py-3`}>
                 <div className='main-container flex justify-between items-center'>
                     <div className='flex items-center space-x-6'>
                         <Link >
