@@ -2,7 +2,7 @@ import React from 'react'
 
 const Honor = () => {
   return (
-    <div>Honor</div>
+    <div className=''>Honor bu</div>
   )
 }
 

@@ -3,14 +3,17 @@ import { NavLink } from 'react-router-dom'
 
 const Smartfonlar = () => {
   return (
-    <section className='main-container'>
-<div>
-  <ul className='py-5'>
-    <li>
-      kjgfd
-    </li>
-  </ul>
-</div>
+    <section className='bg-white p-5'>
+      <div>
+        <ul className='py-5'>
+          <li>
+            <NavLink to='honor' className='font-bold'>Honor</NavLink>
+          </li>
+          <li>
+            <NavLink to='apple' className='font-bold'>Apple</NavLink>
+          </li>
+        </ul>
+      </div>
     </section>
   )
 }

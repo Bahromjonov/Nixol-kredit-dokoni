@@ -1,15 +1,15 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Outlet } from 'react-router-dom'
+import Apple from '../pages/Apple'
+import Honor from '../pages/Honor'
+import Smartfonlar from '../pages/Smartfonlar'
 
 const SmartfonLayout = () => {
     return (
-        <div>
-            <ul>
-                <li>
-                    <NavLink to='honor' className='font-bold'>Honor</NavLink>
-                </li>
-            </ul>
-
+        <div className='main-container flex justify-between '>
+        <Smartfonlar />
+           
+            <Outlet />
         </div>
     )
 }
