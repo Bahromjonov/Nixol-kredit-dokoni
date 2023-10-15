@@ -129,14 +129,8 @@ export const mixedData = [
       text:"Brend: Beko Model: WRE6512BWW",
       img:img8,
     },
-    // {
-    //   id: ,
-    //   title: "",
-    //   cost:"",
-    //   text: "",
-    //   img:img5,
-    // },
-   
     
   ];
+
+  
   
