@@ -6,13 +6,24 @@
   .main-container {
     @apply w-full max-w-1440 mx-auto px-5
   }
-  .main-link{
-    @apply font-medium bg-brColor text-white py-2 px-5 rounded-lg duration-200 
+
+  .main-link {
+    @apply font-medium bg-brColor text-white py-2 px-5 rounded-lg duration-200
   }
-  .hamburger{
-    @apply w-4 h-0.5  rounded-full bg-black  
+
+  .hamburger {
+    @apply w-4 h-0.5 rounded-full bg-black
+  }
+
+  h2 {
+    @apply text-2xl font-bold
+  }
+
+  .NavLink {
+    @apply text-base font-bold
   }
 }
+
 /* 
 @layer base {
   a {
@@ -21,17 +32,20 @@
 }  */
 
 
-nav a.active{
-  @apply text-brColor 
+nav a.active {
+  @apply text-brColor
 }
-nav a:hover{
-  @apply  text-black duration-100 opacity-60
+
+nav a:hover {
+  @apply text-black duration-100 opacity-60
 }
+
 .b:hover .hamburger,
 .liked .hamburger {
-  background-color: #2DBF5B; 
+  background-color: #2DBF5B;
 }
-.start{
+
+.start {
   background-color: #000;
   font-size: 500px;
 }

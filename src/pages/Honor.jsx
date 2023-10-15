@@ -2,7 +2,9 @@ import React from 'react'
 
 const Honor = () => {
   return (
-    <div className=''>Honor bu</div>
+    <section className=''>
+      <h3>Honor Mobile smartfonlari</h3>
+    </section>
   )
 }
 

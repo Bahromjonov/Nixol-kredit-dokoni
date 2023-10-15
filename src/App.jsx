@@ -35,6 +35,7 @@ function App() {
 
         <Route path='smartfonlar' element={<SmartfonLayout />} >
           <Route path='smartfonlar' element={<Smartfonlar/>}/>
+          <Route index element={<Honor />} />
           <Route path='honor' element={<Honor />} />
           <Route path='apple' element={<Apple />} />
 
