@@ -1,14 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { deleteCard } from '../store/slice/cardSlice';
 
 import { Link } from 'react-router-dom';
 
-import del from '../assets/icons/delete-icon.svg'
 
 const Basket = () => {
   const { card } = useSelector((store) => store.card);
   const dispatch = useDispatch();
+
+  const [count, setCount] = useState(0);
+
+  const increment = () => {
+    setCount(count + 1);
+  };
+
+  const decrement = () => {
+    if (count > 0) {
+      setCount(count - 1);
+    }
+  };
+  
 
   return (
     <div className='main-container flex  py-7 gap-10'>
@@ -18,14 +30,14 @@ const Basket = () => {
             {card.map((product, index) => (
               <li key={index} className='flex justify-between items-center bg-white shadow- rounded-lg p-5 space-y-5'>
                 <div className='flex items-center space-x-2'>
-                  <img className='h-32 mx-auto shadow-sm' src={product.img} alt={product.title} />
+                  <img className='h-32 mx-auto ' src={product.img} alt={product.title} />
                   <h3>{product.title}</h3>
                 </div>
                 {/* Inkrement end decriment */}
                 <div className='rounded-lg space-x-3'>
-                  <button className='px-3 py-1 text-white  bg-brColor rounded-l-md '>-</button>
-                  <span>0</span>
-                  <button className='px-3 py-1 text-white  bg-brColor rounded-r-md '>+</button>
+                  <button onClick={decrement} className='px-3 py-1 text-white  bg-brColor rounded-l-md '>-</button>
+                  <span>{count}</span>
+                  <button onClick={increment} className='px-3 py-1 text-white  bg-brColor rounded-r-md '>+</button>
                 </div>
                 {/* O'chirish button */}
                 <div className='space-y-1'>
@@ -40,7 +52,8 @@ const Basket = () => {
           </ul>
         ) : (
           <div className='pt-10 text-center space-y-5'>
-            <h2 className=' font-medium text-2xl'>Savatchangiz bo'sh</h2>
+            <h2  className=' font-medium text-2xl'>Savatchangiz bo'sh</h2>
+            
             <Link className='inline-block main-link hover:bg-white hover:text-brColor border border-brColor' to='/'>Bosh sahifa</Link>
           </div>
 
