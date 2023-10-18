@@ -56,11 +56,11 @@ const MixedData = ({ likedCards, setLikedCards }) => {
             <div key={id} data-aos="fade-up"
               data-aos-anchor-placement="top-center">
 
-              <li className={`bg-white p-6 h-full max-h-[600px] rounded-lg hover:shadow-lg relative ${cardStates[id] ? 'liked' : 'not-liked'} flex flex-col justify-end`}>
+              <li className={`bg-white p-6  rounded-lg hover:shadow-lg relative ${cardStates[id] ? 'liked' : 'not-liked'} flex flex-col justify-end`}>
                 <div className='flex justify-center  relative'>
 
                   <div>
-                    <img className='mb-5 w-200 h-200 flex-grow' src={e.img} alt={e.title}/>
+                    <img className='mb-5 w-200 h-200 ' src={e.img} alt={e.title}/>
                   </div>
                   {/* Toggle like */}
                   <button
@@ -85,7 +85,7 @@ const MixedData = ({ likedCards, setLikedCards }) => {
                 {/* Data map */}
                 <div className='space-y-4 mb-5 grow'>
                   <h2 className='font-bold'>{e.title}</h2>
-                  <span className='inline-block font-semibold text-brColor text-xl'>{e.cost}</span>
+                  <span className='cost'>{e.cost}</span>
                   <p className='font-medium '>{e.text}</p>
                 </div>
 

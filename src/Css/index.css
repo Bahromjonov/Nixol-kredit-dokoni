@@ -18,6 +18,9 @@
   .NavLink {
     @apply text-base font-bold
   }
+  .cost {
+    @apply inline-block font-semibold text-brColor text-xl
+  }
 }
 
 /* 
@@ -35,6 +38,18 @@ nav a:hover {
   @apply text-black duration-100 opacity-60
 }
 
+
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+
+}
+h4 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
 .swiper-button-prev::after {
   font-size: 25px;
   background-color: #fff;
@@ -43,7 +58,8 @@ nav a:hover {
   color: #000;
   margin-left: 20px;
 }
-.swiper-button-next::after{
+
+.swiper-button-next::after {
   font-size: 25px;
   background-color: #fff;
   padding: 20px 25px;
@@ -51,4 +67,3 @@ nav a:hover {
   color: #000;
   margin-right: 20px;
 }
-
