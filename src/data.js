@@ -149,17 +149,73 @@ export const mixedData = [
 ];
 
 import honor1 from './assets/images/honor7aPlus.jpg'
+import honor2 from './assets/images/honor70.jpg'
+import honor3 from './assets/images/honor90.jpg'
+import honor4 from './assets/images/honorx6a.jpg'
+import honor5 from './assets/images/honorx8a.jpg'
+import honor6 from './assets/images/honorx9.jpg'
+import honor7 from './assets/images/honorx9aYaltiroq.jpg'
+
 export const honor = [
   {
     id: 1,
     title: "Honor X7a plus 6/128GB Midnight Black Smartfoni",
     cost: "2 479 000 so'm",
-    text: " Model B70",
+    text: " Model: B70",
     brend:"Brend: Microlab",
     img: honor1,
+  },
+  {
+    id: 2,
+    title: "Honor 70 8/128GB Yashil Smartfoni",
+    cost: "6 089 000 so'm",
+    text: " Model: B70",
+    brend:"Brend: Honor",
+    img: honor2,
+  },
+  {
+    id: 3,
+    title: "Honor 90 12/512GB Yashil Smartfoni",
+    cost: "6 739 000 so'm",
+    text: " Model: HONOR 90",
+    brend:"Brend: Honor",
+    img: honor3,
+  },
+  {
+    id: 4,
+    title: "Honor X6a 4/128GB Ko'k Smartfoni",
+    cost: "1 979 000 so'm",
+    text: "Model:X6a ",
+    brend:"Brend: Honor",
+    img: honor4,
+  },
+  {
+    id:5 ,
+    title: "Honor X8A 6/128GB Qora Smartfoni",
+    cost: "2 659 000 so'm",
+    text: "Model: X8A",
+    brend:"Brend: Honor",
+    img: honor5,
+  },
+  {
+    id:6 ,
+    title: "Honor X9a 6/128GB Qora Smartfoni",
+    cost: "4 199 000 so'm",
+    text: "Model: X9a",
+    brend:"Brend: Honor",
+    img: honor6,
+  },
+  {
+    id:7 ,
+    title: "Honor X9a 6/128GB Kumushrang Smartfoni",
+    cost: "4 199 000 so'm",
+    text: "Model: X9a",
+    brend:"Brend: Honor",
+    img: honor7,
+  },
 
-  }
 ]
+
 
 
 

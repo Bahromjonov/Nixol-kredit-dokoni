@@ -10,11 +10,11 @@ const Honor = ({addCard}) => {
   return (
     <section className=''>
       <h3 className='mb-5'>Honor mobile smartfonlari</h3>
-      <ul className='grid grid-cols-3'>
+      <ul className='grid grid-cols-3 gap-5'>
         {honor.map((e, id) => ( 
           <li key={id} className='bg-white p-6 h-full max-h-[600px] rounded-lg hover:shadow-lg'>
             <img className='mb-5 w-200 h-200 mx-auto' src={e.img} alt={e.id} />
-            <div className='space-y-4'>
+            <div className='space-y-4 mb-5'>
               <h4>{e.title}</h4>
               <span className='cost'>{e.cost}</span>
               <p className='block font-normal'>{e.brend}</p>
