@@ -1,49 +1,51 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { deleteCard } from '../store/slice/cardSlice';
-
+import { deleteCard, minusCount, plusCount } from '../store/slice/cardSlice';
 import { Link } from 'react-router-dom';
+import { populationFilter } from '../store/filter';
 
+import deleteIcon from '../assets/icons/delete-icon.svg'
 
 const Basket = () => {
   const { card } = useSelector((store) => store.card);
-  const dispatch = useDispatch();
 
-  const [count, setCount] = useState(0);
+  let total = 0
 
-  const increment = () => {
-    setCount(count + 1);
-  };
+  if (card.length > 0) {
+    card.forEach(product => {
+      const costInSom = parseFloat(product.cost.replace(/\s+/g, "").replace("so'm", "").replace(",", "."));
+      total += costInSom * product.count;
+    });
+  }
 
-  const decrement = () => {
-    if (count > 0) {
-      setCount(count - 1);
-    }
-  };
-  
+  const dispatch = useDispatch()
 
   return (
-    <div className='main-container flex  py-7 gap-10'>
-      <div className='w-full max-w-5xl'>
+    <div>
+      <div className='main-container flex justify-between items-start py-5 '>
         {card.length > 0 ? (
-          <ul className="grid grid-cols-1 gap-5">
+          <ul className='flex flex-col space-y-5 '>
             {card.map((product, index) => (
-              <li key={index} className='flex justify-between items-center bg-white shadow- rounded-lg p-5 space-y-5'>
+              <li key={index} className='max-w-7xl flex  justify-between items-center space-x-5 bg-white drop-shadow-xl rounded-lg px-5 py-7'>
                 <div className='flex items-center space-x-2'>
-                  <img className='h-32 mx-auto ' src={product.img} alt={product.title} />
-                  <h3>{product.title}</h3>
+                  <img className='w-32' src={product.img} alt={product.title} />
+                  <h3 className='text-xl font-medium'>{product.title}</h3>
                 </div>
-                {/* Inkrement end decriment */}
-                <div className='rounded-lg space-x-3'>
-                  <button onClick={decrement} className='px-3 py-1 text-white  bg-brColor rounded-l-md '>-</button>
-                  <span>{count}</span>
-                  <button onClick={increment} className='px-3 py-1 text-white  bg-brColor rounded-r-md '>+</button>
+                <div className='flex justify-between items-center'>
+                  <div className='flex items-center space-x-2'>
+                    <button disabled={product.count === 1} onClick={() => dispatch(minusCount(product.id))} className='bg-brColor w-8 h-8 rounded-l-lg'>
+                      -
+                    </button>
+                    <span>{product.count}</span>
+                    <button onClick={() => dispatch(plusCount(product.id))} className='bg-brColor w-8 h-8 rounded-r-lg'>
+                      +
+                    </button>
+                  </div>
                 </div>
-                {/* O'chirish button */}
-                <div className='space-y-1'>
-                  <span className='block text-brColor text-lg'>{product.cost}</span>
-                  <button onClick={() => dispatch(deleteCard(product))} className='text-red-500 flex'>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="20px" height="20px"><path fill='red' d="M 20.5 4 A 1.50015 1.50015 0 0 0 19.066406 6 L 14.640625 6 C 12.803372 6 11.082924 6.9194511 10.064453 8.4492188 L 7.6972656 12 L 7.5 12 A 1.50015 1.50015 0 1 0 7.5 15 L 8.2636719 15 A 1.50015 1.50015 0 0 0 8.6523438 15.007812 L 11.125 38.085938 C 11.423352 40.868277 13.795836 43 16.59375 43 L 31.404297 43 C 34.202211 43 36.574695 40.868277 36.873047 38.085938 L 39.347656 15.007812 A 1.50015 1.50015 0 0 0 39.728516 15 L 40.5 15 A 1.50015 1.50015 0 1 0 40.5 12 L 40.302734 12 L 37.935547 8.4492188 C 36.916254 6.9202798 35.196001 6 33.359375 6 L 28.933594 6 A 1.50015 1.50015 0 0 0 27.5 4 L 20.5 4 z M 14.640625 9 L 33.359375 9 C 34.196749 9 34.974746 9.4162203 35.439453 10.113281 L 36.697266 12 L 11.302734 12 L 12.560547 10.113281 A 1.50015 1.50015 0 0 0 12.5625 10.111328 C 13.025982 9.4151428 13.801878 9 14.640625 9 z M 11.669922 15 L 36.330078 15 L 33.890625 37.765625 C 33.752977 39.049286 32.694383 40 31.404297 40 L 16.59375 40 C 15.303664 40 14.247023 39.049286 14.109375 37.765625 L 11.669922 15 z" /></svg>
+                <div>
+                  <span className='text-xl block'>{product.cost}</span>
+                  <button onClick={() => dispatch(deleteCard(product))} className='text-red-500 flex items-end'>
+                    <img className='w-6' src={deleteIcon} alt="delete icon" />
                     O'chirish
                   </button>
                 </div>
@@ -52,19 +54,19 @@ const Basket = () => {
           </ul>
         ) : (
           <div className='pt-10 text-center space-y-5'>
-            <h2  className=' font-medium text-2xl'>Savatchangiz bo'sh</h2>
-            
-            <Link className='inline-block main-link hover:bg-white hover:text-brColor border border-brColor' to='/'>Bosh sahifa</Link>
+            <h2 className='text-xl font-medium'>Savatchangiz bo'sh</h2>
+            <Link className='inline-block main-link hover:bg-white hover:text-brColor border border-brColor px-4 py-2 rounded-md' to='/'>
+              Bosh sahifa
+            </Link>
           </div>
-
         )}
-      </div>
-
-      <div>
-        Umimiy summa
+        <div className='w-full max-w-sm  total-sum  font-medium text-lg bg-white p-10 rounded-lg drop-shadow-xl'>
+          <span className='font-bold  mr-2'> Umumiy summa:</span>
+          {populationFilter(total)}  so'm
+        </div>
       </div>
     </div>
   );
-}
+};
 
 export default Basket;

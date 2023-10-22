@@ -162,7 +162,7 @@ export const honor = [
     title: "Honor X7a plus 6/128GB Midnight Black Smartfoni",
     cost: "2 479 000 so'm",
     text: " Model: B70",
-    brend:"Brend: Microlab",
+    brend:"Brend: Honor",
     img: honor1,
   },
   {
@@ -216,6 +216,16 @@ export const honor = [
 
 ]
 
+export const apple = [
+  {
+    id: 1,
+    title: "Honor X7a plus 6/128GB Midnight Black Smartfoni",
+    cost: "2 479 000 so'm",
+    text: " Model: B70",
+    brend:"Brend: Microlab",
+    img: honor1,
+  },
+]
 
 
 

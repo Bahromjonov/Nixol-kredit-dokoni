@@ -18,6 +18,7 @@
   .NavLink {
     @apply text-base font-bold
   }
+
   .cost {
     @apply inline-block font-semibold text-brColor text-xl
   }
@@ -37,33 +38,36 @@ nav a.active {
 nav a:hover {
   @apply text-black duration-100 opacity-60
 }
-
-
-
 h3 {
   font-size: 18px;
   font-weight: 700;
-
 }
 h4 {
   font-size: 14px;
   font-weight: 700;
 }
-
-.swiper-button-prev::after {
-  font-size: 25px;
-  background-color: #fff;
-  padding: 20px 25px;
-  border-radius: 50%;
-  color: #000;
-  margin-left: 20px;
+.swiper-button-next,
+.swiper-button-prev {
+  display: flex;
+  transition: opacity 0.5s ease; 
+  opacity: 0; 
+}
+.swiper-button-next{
+  padding-right: 20px;
+}
+.swiper-button-prev{
+  padding-left: 20px;
 }
 
-.swiper-button-next::after {
-  font-size: 25px;
+:is(.swiper-button-next, .swiper-button-prev)::after {
+  font-size: 20px;
   background-color: #fff;
-  padding: 20px 25px;
+  padding:20px 25px;
   border-radius: 50%;
   color: #000;
-  margin-right: 20px;
 }
+
+.swiper:hover :is(.swiper-button-next, .swiper-button-prev) {
+  opacity: 1;
+}
+
