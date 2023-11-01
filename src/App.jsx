@@ -38,9 +38,7 @@ function App() {
           <Route index element={<Honor />} />
           <Route path='honor' element={<Honor />} />
           <Route path='apple' element={<Apple />} />
-
         </Route>
-
         <Route path='noutboklar' element={<Noutboklar />} />
         <Route path='maishiyTexnikalar' element={<MaishiyTexnikalar />} />
         <Route path='mebellar' element={<MaishiyTexnikalar />} />

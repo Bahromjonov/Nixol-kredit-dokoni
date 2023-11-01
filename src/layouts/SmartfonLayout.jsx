@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink, Outlet } from 'react-router-dom'
+import {Outlet } from 'react-router-dom'
 import Smartfonlar from '../pages/Smartfonlar'
 
 const SmartfonLayout = () => {
