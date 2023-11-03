@@ -26,9 +26,9 @@ export default () => {
             }}
             navigation={true}
             loop={true}
-            pagination={{ clickable: true }}
+            pagination={{ clickable: true }}    
         >
-            <Swiper className='swiperr'>
+            <Swiper className='swiprerr'>
                 <SwiperSlide >
                     <img className='w-full  rounded-lg ' src={img} alt="maishiy texnikalar rasimi" />
                 </SwiperSlide>

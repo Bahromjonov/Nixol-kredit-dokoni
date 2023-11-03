@@ -5,8 +5,27 @@ import 'aos/dist/aos.css'
 import heart from '../assets/icons/heart-icon.svg'
 import { addCard } from '../store/slice/cardSlice';
 import { useDispatch } from 'react-redux';
-import { toast, ToastContainer } from 'react-toastify';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Link } from 'react-router-dom';
 
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
+// Imgs
+import acer from '../assets/images/acer.webp'
+import apple from '../assets/images/apple.webp'
+import artel from '../assets/images/artel.webp'
+import asus from '../assets/images/asus.webp'
+import kukmara from '../assets/images/kukmara.webp'
+import lenovo from '../assets/images/lenovo.webp'
+import samsung from '../assets/images/samsung.webp'
+import sony from '../assets/images/sony.webp'
+import intex from '../assets/images/intex.webp'
+import xiomi from '../assets/images/xiaomi.webp'
 
 const MixedData = ({ likedCards, setLikedCards }) => {
   const [cardStates, setCardStates] = useState(Array(mixedData.length).fill(false));
@@ -32,9 +51,6 @@ const MixedData = ({ likedCards, setLikedCards }) => {
       console.error('toggleCard funktsiyasida xato: ', error);
     }
   };
-
-
-
   const dispatch = useDispatch()
   const addToCard = (product) => {
     dispatch(addCard(product))
@@ -53,10 +69,10 @@ const MixedData = ({ likedCards, setLikedCards }) => {
       <ul className='grid grid-cols-4 gap-5 '>
         {mixedData.map((e, id) => {
           return (
-            <div key={id} data-aos="fade-up"
+            <li key={id} data-aos="fade-up"
               data-aos-anchor-placement="top-center">
 
-              <li className={`bg-white p-6 h-full max-h-[600px] rounded-lg hover:shadow-lg relative ${cardStates[id] ? 'liked' : 'not-liked'} flex flex-col justify-end`}>
+              <div className={`bg-white p-6 h-full max-h-[600px] rounded-lg hover:shadow-lg relative ${cardStates[id] ? 'liked' : 'not-liked'} flex flex-col justify-end`}>
                 <div className='flex justify-center  relative'>
 
                   <div>
@@ -110,11 +126,98 @@ const MixedData = ({ likedCards, setLikedCards }) => {
                   </button>
                 </div>
 
-              </li>
-            </div>
+              </div>
+            </li>
           );
         })}
       </ul>
+
+      <Swiper className='py-10 swi'
+        modules={[Navigation, Pagination, Scrollbar, A11y,Autoplay]}
+        spaceBetween={20}
+        slidesPerView={6}
+        navigation={true}
+        // pagination={{ clickable: true }}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+
+      }}
+      loop={true}
+
+      >
+        <SwiperSlide>
+          <div className='brend-still'>
+            <Link to='/'>
+              <img className='brend' src={acer} alt="acer logo image" />
+            </Link>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className='brend-still '>
+            <Link className='mx-auto' to='/'>
+              <img className='brend mx-auto' src={apple} alt="apple logo image" />
+            </Link>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className='brend-still'>
+            <Link to='/'>
+              <img className='brend ' src={artel} alt="artel logo image" />
+            </Link>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className='brend-still'>
+            <Link to='/'>
+              <img className='brend' src={asus} alt="asus logo image" />
+            </Link>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className='brend-still'>
+            <Link to='/'>
+              <img className='brend' src={kukmara} alt="kukmara logo image" />
+            </Link>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className='brend-still'>
+            <Link to='/'>
+              <img className='brend' src={lenovo} alt="lenovo logo image" />
+            </Link>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className='brend-still'>
+            <Link to='/'>
+              <img className='brend' src={samsung} alt="samsung logo image" />
+            </Link>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className='brend-still'>
+            <Link to='/'>
+              <img className='brend' src={sony} alt="sony logo image" />
+            </Link>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className='brend-still'>
+          <Link to='/'>
+            <img className='brend' src={intex} alt="itex logo image" />
+          </Link>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className='brend-still'>
+          <Link to='/'>
+            <img className='brend' src={xiomi} alt="xiomi logo image" />
+          </Link>
+          </div>
+        </SwiperSlide>
+
+      </Swiper>
     </div>
   );
 };

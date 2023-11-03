@@ -63,4 +63,19 @@ h4 {
 .swiper:hover :is(.swiper-button-next, .swiper-button-prev) {
   opacity: 1;
 }
+.brend{
+  width: 90px;
+  height: 100px;
+  border-radius: 8px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
+.swi :is(.swiper-button-next, .swiper-button-prev){
+  display: none;
+}
+.brend-still {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+}

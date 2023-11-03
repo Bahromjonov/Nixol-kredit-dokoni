@@ -12,7 +12,7 @@ const Footer = () => {
                 </Link>
                 {/* social networks */}
                 <div>
-                    <p className=''>Ijtimoiy tarmoqlar</p>
+                    <p className='font-semibold fo mb-2'>Ijtimoiy tarmoqlar</p>
                     <ul className='flex space-x-5'>
                         <li >
                             <a target='_blank' href='https://www.instagram.com/yax_yo_bek_'>
