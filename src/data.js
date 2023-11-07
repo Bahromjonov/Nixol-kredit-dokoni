@@ -318,7 +318,7 @@ export const asus = [
   {
     id: 6,
     img: asus5,
-    title: "Asus Expertbook B5402, Core I5-1155G7. DDR4 16GB. SSD 512Gb. 14 , windows 11 Noutbuki " ,
+    title: "Asus TUF Gaming FA507RE-A15 Ryzen R7-6800H. DDR4 8GB. SSD 512Gb. 4GB RTX13050Ti. 15.6. win 11 Noutbuki " ,
     cost: "7 709 000 so'm",
     text: " Model: B5402",
     brend:"Brend: ASUS",
@@ -327,11 +327,11 @@ export const asus = [
     id: 7,
     img: asus6,
     title: "Asus Expertbook B5402, Core I5-1155G7. DDR4 16GB. SSD 512Gb. 14 , windows 11 Noutbuki " ,
-    cost: "7 709 000 so'm",
-    text: " Model: B5402",
+    cost: "11 479 000 so'm",
+    text: " Model: TUF Gaming FA507RE-A15",
     brend:"Brend: ASUS",
   },
 ]
 
-
+export const arry = [...mixedData,...asus,...honor,...apple,]
 

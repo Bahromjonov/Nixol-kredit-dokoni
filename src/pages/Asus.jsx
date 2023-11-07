@@ -17,7 +17,7 @@ const Asus = () => {
                 {asus.map((e, id) => (
                     <li key={id} className='bg-white flex flex-col p-6 w-[320px] h-full max-h-[600px] rounded-lg hover:shadow-lg'>
                         <div className='flex justify-center mb-5'>
-                            <img className='  h-200' src={e.img} alt={e.id} />
+                            <img className=' h-200' src={e.img} alt={e.id} />
                         </div>
 
                         <div className='space-y-4 mb-5 grow'>

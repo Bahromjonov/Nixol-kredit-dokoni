@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { mixedData } from '../data';
+import { arry, mixedData } from '../data';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 import heart from '../assets/icons/heart-icon.svg'
@@ -67,7 +67,7 @@ const MixedData = ({ likedCards, setLikedCards }) => {
   return (
     <div>
       <ul className='grid grid-cols-4 gap-5 '>
-        {mixedData.map((e, id) => {
+        {arry.map((e, id) => {
           return (
             <li key={id} data-aos="fade-up"
               data-aos-anchor-placement="top-center">
@@ -76,7 +76,7 @@ const MixedData = ({ likedCards, setLikedCards }) => {
                 <div className='flex justify-center  relative'>
 
                   <div>
-                    <img className='mb-5 w-200 h-200 ' src={e.img} alt={e.title} />
+                    <img className='mb-5  h-200 ' src={e.img} alt={e.title} />
                   </div>
                   {/* Toggle like */}
                   <button
