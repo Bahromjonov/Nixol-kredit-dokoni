@@ -22,6 +22,9 @@
   .cost {
     @apply inline-block font-semibold text-brColor text-xl
   }
+  .carta {
+    @apply w-[150px] py-5  bg-gray-200 rounded-lg justify-center
+  }
 }
 
 nav a.active {
@@ -76,6 +79,6 @@ h4 {
 }
 .brend-still {
   background-color: #fff;
-  padding: 10px;
+  padding: 5px;
   border-radius: 8px;
 }

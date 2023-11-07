@@ -6,7 +6,6 @@ const SmartfonLayout = () => {
     return (
         <div className='main-container flex gap-10 py-10'>
         <Smartfonlar />
-           
             <Outlet />
         </div>
     )

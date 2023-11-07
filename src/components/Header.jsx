@@ -4,7 +4,6 @@ import { Link, } from 'react-router-dom'
 
 // Imgs
 import img from '../assets/images/Nixol.png'
-import Basket from '../pages/Basket'
 import Navbar from './Navbar'
 
 const Header = ({ likedCards }) => {

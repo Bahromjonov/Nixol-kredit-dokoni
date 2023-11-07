@@ -82,7 +82,6 @@ const MixedData = ({ likedCards, setLikedCards }) => {
                   <button
                     onClick={() => toggleCard(id)}
                     className={`card-toggle-button  ${cardStates[id] ? 'liked' : 'not-liked'} absolute right-0`} >
-
                     {/* Like  */}
                     {cardStates[id] ? (
                       <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 107.39" >
@@ -96,7 +95,6 @@ const MixedData = ({ likedCards, setLikedCards }) => {
                       <img className='w-8 h-8' src={heart} alt="basket" />
                     )}
                   </button>
-
                 </div>
                 {/* Data map */}
                 <div className='space-y-2 mb-5 grow'>
@@ -144,7 +142,6 @@ const MixedData = ({ likedCards, setLikedCards }) => {
 
       }}
       loop={true}
-
       >
         <SwiperSlide>
           <div className='brend-still'>

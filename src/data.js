@@ -216,15 +216,63 @@ export const honor = [
 
 ]
 
+import ipple14pro from './assets/images/iphone14pro.webp'
+import iphone15pro from './assets/images/iphone15pro.webp' 
+import iphone15promax from './assets/images/iphone15promax.webp'
+import iphone15promax1tb from './assets/images/iphone15promax1tb.webp'
+import iphone15promax128oq from './assets/images/iphone15promax128oq.webp'
+import iphone15promax512qora from './assets/images/iphone15promax512qora.webp'
+
 export const apple = [
   {
     id: 1,
-    title: "Honor X7a plus 6/128GB Midnight Black Smartfoni",
-    cost: "2 479 000 so'm",
-    text: " Model: B70",
-    brend:"Brend: Microlab",
-    img: honor1,
+    title: "iPhone 14 Pro 128GB Deep Purple smartfoni",
+    cost: "13 699 000 so'm",
+    text: " Model: iPhone 14 Pro",
+    brend:"Brend: Apple",
+    img: ipple14pro,                                          
   },
+  {
+    id: 2,
+    title: "iPhone 15 Pro 256GB Ko'k Titanrang Smartfoni",
+    cost: "15 289 000 so'm",
+    text: " Model: iPhone 15 Pro",
+    brend:"Brend: Apple",
+    img: iphone15pro,
+  },
+  {
+    id: 3,
+    title: "iPhone 15 Pro max 256GB Titanrang Smartfoni",
+    cost: "19 029 000 so'm",
+    text: " Model: iPhone 15 Pro max",
+    brend:"Brend: Apple",
+    img: iphone15promax,
+  },
+  {
+    id: 4,
+    title: "iPhone 15 Pro max 1TB Titanrang Smartfoni",
+    cost: "26 099 000 so'm",
+    text: " Model: iPhone 15 Pro max",
+    brend:"Brend: Apple",
+    img: iphone15promax1tb,
+  },
+  {
+    id: 5,
+    title: "iPhone 15 Pro max 512GB Qora Titanrang Smartfoni",
+    cost: "23 089 000 so'm",
+    text: " Model: iPhone 15 Pro max",
+    brend:"Brend: Apple",
+    img: iphone15promax512qora,
+  },
+  {
+    id: 6,
+    title: "iPhone 15 Pro 128GB Oq Titanrang Smartfoni",
+    cost: "15 699 000 so'm",
+    text: " Model: iPhone 15 Pro ",
+    brend:"Brend: Apple",
+    img: iphone15promax128oq,
+  },
+  
 ]
 
 
