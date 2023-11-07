@@ -14,6 +14,9 @@ import { useState } from 'react'
 import Honor from './pages/Honor'
 import SmartfonLayout from './layouts/SmartfonLayout'
 import Apple from './pages/Apple'
+import NoutboklarLayout from './layouts/NoutboklarLayout'
+import { Acer } from './pages/Acer'
+import Asus from './pages/Asus'
 
 function App() {
 
@@ -39,7 +42,12 @@ function App() {
           <Route path='honor' element={<Honor />} />
           <Route path='apple' element={<Apple />} />
         </Route>
-        <Route path='noutboklar' element={<Noutboklar />} />
+        <Route path='noutboklar' element={<NoutboklarLayout />}>
+          <Route path='noutboklar' element={<Noutboklar/>}/>
+          <Route index element={<Acer/>}/>
+          <Route path='acer' element={<Acer/>}/>
+          <Route path='asus' element={<Asus/>}/>
+        </Route>
         <Route path='maishiyTexnikalar' element={<MaishiyTexnikalar />} />
         <Route path='mebellar' element={<MaishiyTexnikalar />} />
         <Route path='qurilishAsboblari' element={<QurilishAsboblari />} />

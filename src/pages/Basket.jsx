@@ -26,17 +26,17 @@ const Basket = () => {
         {card.length > 0 ? (
           <ul className='w-full max-w-[950px] flex flex-col space-y-5 '>
             {card.map((product, index) => (
-              <li key={index} className=' flex  justify-between items-center space-x-5 bg-white drop-shadow-xl rounded-lg px-5 py-7'>
+              <li key={index} className=' flex  justify-between items-center space-x-5 bg-white drop-shadow-xl rounded-lg px-5 py-7 '>
                 <div className='flex items-center space-x-2'>
                   <img className='w-32' src={product.img} alt={product.title} />
                   <h3 className='text-xl font-medium'>{product.title}</h3>
                 </div>
-                <div className=' w-[100px] flex  space-x-2'>
+                <div className=' w-[100px] flex gap-2 justify-center items-center'>
                   <button disabled={product.count === 1} onClick={() => dispatch(minusCount(product.id))} className='bg-brColor w-8 h-8 rounded-l-lg'>
                     -
                   </button>
-                  <div className='w-full max-w-[20px] flex justify-center items-center'>
-                    <span className=' inline-block  font-bold text-sm'>{product.count}</span>
+                  <div className='w-[20px] flex justify-center items-center'>
+                    <span className='font-bold text-sm'>{product.count}</span>
                   </div>
                   <button onClick={() => dispatch(plusCount(product.id))} className='bg-brColor w-8 h-8 rounded-r-lg'>
                     +

@@ -275,6 +275,63 @@ export const apple = [
   
 ]
 
+import asus1 from './assets/images/asusExpertbooki58gb256gb.webp' 
+import asus2 from './assets/images/asusi58gb.webp'
+import asus3 from './assets/images/asusi516gb512gb.webp'
+import asus4 from './assets/images/asusi31000gb.webp'
+import asus5 from './assets/images/AsusTUFGaming8gb512gb.webp'
+import asus6 from './assets/images/AsusX5134gb.webp'
+
+export const asus = [
+  {
+    id: 1,
+    img: asus1,
+    title: "Asus Expertbook B1500CEAE, Core I5-1135G7,DDR4 8Gb, SSD 256Gb, 15.6 FullHD IPS, Noutbuki" ,
+    cost: "5 909 000 so'm",
+    text: " Model: B1500CEAE",
+    brend:"Brend: ASUS",
+  },
+  {
+    id: 2,
+    img: asus2,
+    title: "Asus X515E. Core I5-1135G1. DDR4 8GB. SSD512Gb. 15.6 FullHD IPS Noutbuki" ,
+    cost: "6 319 000 so'm",
+    text: " Model: X515E",
+    brend:"Brend: ASUS",
+  },
+  {
+    id: 3,
+    img: asus3,
+    title: "Asus Expertbook B5402, Core I5-1155G7. DDR4 16GB. SSD 512Gb. 14 , windows 11 Noutbuki " ,
+    cost: "7 709 000 so'm",
+    text: " Model: B5402",
+    brend:"Brend: ASUS",
+  },
+  {
+    id: 4,
+    img: asus4,
+    title: "Asus Expertbook B5402, Core I5-1155G7. DDR4 16GB. SSD 512Gb. 14 , windows 11 Noutbuki " ,
+    cost: "7 709 000 so'm",
+    text: " Model: B5402",
+    brend:"Brend: ASUS",
+  },
+  {
+    id: 6,
+    img: asus5,
+    title: "Asus Expertbook B5402, Core I5-1155G7. DDR4 16GB. SSD 512Gb. 14 , windows 11 Noutbuki " ,
+    cost: "7 709 000 so'm",
+    text: " Model: B5402",
+    brend:"Brend: ASUS",
+  },
+  {
+    id: 7,
+    img: asus6,
+    title: "Asus Expertbook B5402, Core I5-1155G7. DDR4 16GB. SSD 512Gb. 14 , windows 11 Noutbuki " ,
+    cost: "7 709 000 so'm",
+    text: " Model: B5402",
+    brend:"Brend: ASUS",
+  },
+]
 
 
 
