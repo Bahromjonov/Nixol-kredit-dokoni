@@ -15,7 +15,7 @@ import Honor from './pages/Honor'
 import SmartfonLayout from './layouts/SmartfonLayout'
 import Apple from './pages/Apple'
 import NoutboklarLayout from './layouts/NoutboklarLayout'
-import { Acer } from './pages/Acer'
+import  Acer  from './pages/Acer'
 import Asus from './pages/Asus'
 
 function App() {
@@ -44,7 +44,7 @@ function App() {
         </Route>
         <Route path='noutboklar' element={<NoutboklarLayout />}>
           <Route path='noutboklar' element={<Noutboklar/>}/>
-          <Route index element={<Acer/>}/>
+          <Route index element={<Asus/>}/>
           <Route path='acer' element={<Acer/>}/>
           <Route path='asus' element={<Asus/>}/>
         </Route>

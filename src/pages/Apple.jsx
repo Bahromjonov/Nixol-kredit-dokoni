@@ -12,7 +12,7 @@ const Apple = () => {
   return (
     <div>
       <h3 className='mb-5'>Apple smartfonlar</h3>
-      <ul className='grid grid-cols-3 gap-7'>
+      <ul className='grid grid-cols-3 gap-5'>
         {apple.map((e) => (
           <li key={e.id} className='bg-white flex flex-col p-6 max-w-[320px] h-full max-h-[600px] rounded-lg hover:shadow-lg'>
             <div className='flex justify-center'>

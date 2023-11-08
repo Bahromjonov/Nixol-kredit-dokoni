@@ -11,11 +11,11 @@ const Asus = () => {
     };
 
     return (
-        <section className=''>
-            <h3 className='mb-5'>Honor mobile smartfonlari</h3>
-            <ul className='grid grid-cols-3 gap-7 '>
+        <section className='flex flex-col flex-wrap'>
+            <h3 className='mb-5'>Noutbuklar va aksessuarlar asus</h3>
+            <ul className='grid grid-cols-3 gap-5 '>
                 {asus.map((e, id) => (
-                    <li key={id} className='bg-white flex flex-col p-6 w-[320px] h-full max-h-[600px] rounded-lg hover:shadow-lg'>
+                    <li key={id} className='bg-white flex flex-col p-6 max-w-[320px] h-full max-h-[600px] rounded-lg hover:shadow-lg'>
                         <div className='flex justify-center mb-5'>
                             <img className=' h-200' src={e.img} alt={e.id} />
                         </div>

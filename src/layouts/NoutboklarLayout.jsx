@@ -4,7 +4,7 @@ import Noutboklar from '../pages/Noutboklar'
 
 const NoutboklarLayout = () => {
     return (
-        <div className='main-container flex gap-10 py-10'>
+        <div className='main-container flex gap-10 justify-between py-10'>
         <Noutboklar />
             <Outlet />
         </div>

@@ -11,11 +11,11 @@ const Honor = ({ addToCard }) => {
     dispatch(addCard(product));
   };
   return (
-    <section className=''>
+    <section className='felx flex-col'>
       <h3 className='mb-5'>Honor mobile smartfonlari</h3>
-      <ul className='grid grid-cols-3 gap-7 '>
+      <ul className='grid grid-cols-3 gap-5 '>
         {honor.map((e, id) => (
-          <li key={id} className='bg-white flex flex-col p-6 w-[320px] h-full max-h-[600px] rounded-lg hover:shadow-lg'>
+          <li key={id} className='bg-white flex flex-col p-6 max-w-[320px] h-full max-h-[600px] rounded-lg hover:shadow-lg'>
             <div className='flex justify-center'>
               <img className='mb-5 w-200 h-200' src={e.img} alt={e.id} />
             </div>

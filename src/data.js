@@ -332,6 +332,68 @@ export const asus = [
     brend:"Brend: ASUS",
   },
 ]
+import acer1 from './assets/images/AcerA315510P3652.webp'
+import acer2 from './assets/images/AcerAspire3.webp'
+import acer3 from './assets/images/AcerCorei5-1135.webp'
+import acer4 from './assets/images/AcerEX25-54i3.png'
+import acer5 from './assets/images/AcerExtensa8gb256gb.webp'
+import acer6 from './assets/images/AcerNitro5.webp'
+
+export const acer = [
+  {
+    id: 1,
+    img: acer1,
+    title: "Acer A315-510P-3652, Core I3-N305, DDR4 4GB, SSD 256GB, 15.6 FullHD, Pure Silver Noutbuki" ,
+    cost: "3 989 000 so'm",
+    text: " Model: A315-510P-3652",
+    brend:"Brend: Acer",
+  },
+  {
+    id: 2,
+    img: acer2,
+    title: "Acer Aspire 3 A315-510P, core I3-N305, DDR4 8GB, SSD 256GB, FullHD 15.6 Noutbuki " ,
+    cost: "4 219 000 so'm",
+    text: " Model: Aspire 3 A315-510",
+    brend:"Brend: Acer",
+  },
+  {
+    id: 3,
+    img: acer3,
+    title: "Acer Core i5-1135. DDR4 8Gb, SSD 512GB, FullHD 15.6 Silver Noutbuki" ,
+    cost: "5 729 000 so'm",
+    text: " Model: acer",
+    brend:"Brend: Acer",
+  },
+  {
+    id: 4,
+    img: acer4,
+    title: "Acer EX25-54, core i3-1115G4, DDR4 8GB,SSD 256GB, 15.6 FHD noutbuki" ,
+    cost: "4 379 000 so'm",
+    text: " Model: Extensa 2540",
+    brend:"Brend: Acer",
+  },
+  {
+    id: 5,
+    img: acer5  ,
+    title: "Acer Extensa 15 EX215| Core I5-1135G7| DDR4 8G| SSD 256Gb| Intel Iris Xe| 15.6 Noutbuki" ,
+    cost: "5 039 000 so'm",
+    text: " Model: Extensa 15 EX215",
+    brend:"Brend: Acer",
+  },
+  {
+    id: 6,
+    img: acer6,
+    title: "Acer Nitro 5 AN515-57-919C. Core I9-11900H DDR4 16Gb. SSD 512 GB. RTX3060 6GB. 15.6 IPS. Black Noutbuki" ,
+    cost: "14 079 000 so'm",
+    text: " Model: Nitro 5 AN515-57-919C",
+    brend:"Brend: Acer",
+  },
+]
+
+
+
+
+
 
 export const arry = [...mixedData,...asus,...honor,...apple,]
 
