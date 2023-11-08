@@ -15,8 +15,9 @@ import Honor from './pages/Honor'
 import SmartfonLayout from './layouts/SmartfonLayout'
 import Apple from './pages/Apple'
 import NoutboklarLayout from './layouts/NoutboklarLayout'
-import  Acer  from './pages/Acer'
+import Acer from './pages/Acer'
 import Asus from './pages/Asus'
+import MaishiyTexnikalarLayouts from './layouts/MaishiyTexnikalarLayouts'
 
 function App() {
 
@@ -36,19 +37,21 @@ function App() {
         <Route path='basket' element={<Basket likedCards={likedCards} removeCard={removeCard} basket={basket} setBasket={setBasket} />} />
         <Route path='heart' element={<Heart removeCard={removeCard} />} />
 
-        <Route path='smartfonlar' element={<SmartfonLayout />} >
-          <Route path='smartfonlar' element={<Smartfonlar/>}/>
+        <Route path='/' element={<SmartfonLayout />} >
+          <Route path='smartfonlar' element={<Smartfonlar />} />
           <Route index element={<Honor />} />
           <Route path='honor' element={<Honor />} />
           <Route path='apple' element={<Apple />} />
         </Route>
         <Route path='noutboklar' element={<NoutboklarLayout />}>
-          <Route path='noutboklar' element={<Noutboklar/>}/>
-          <Route index element={<Asus/>}/>
-          <Route path='acer' element={<Acer/>}/>
-          <Route path='asus' element={<Asus/>}/>
+          <Route path='noutboklar' element={<Noutboklar />} />
+          <Route index element={<Asus />} />
+          <Route path='acer' element={<Acer />} />
+          <Route path='asus' element={<Asus />} />
         </Route>
-        <Route path='maishiyTexnikalar' element={<MaishiyTexnikalar />} />
+        <Route path='maishiyTexnikalar' element={<MaishiyTexnikalarLayouts />}>
+
+        </Route>
         <Route path='mebellar' element={<MaishiyTexnikalar />} />
         <Route path='qurilishAsboblari' element={<QurilishAsboblari />} />
         <Route path='aloqa' element={<Aloqa />} />
