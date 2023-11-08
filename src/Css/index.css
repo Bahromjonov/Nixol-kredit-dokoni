@@ -34,6 +34,9 @@ nav a.active {
 nav a:hover {
   @apply text-black duration-100 opacity-60
 }
+body {
+  transition: all 0.5s; 
+}
 h3 {
   font-size: 18px;
   font-weight: 700;

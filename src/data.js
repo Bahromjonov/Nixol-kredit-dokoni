@@ -449,6 +449,72 @@ export const arshia = [
   },
 ]
 
+import artel1 from './assets/images/ArtelApetito02-GCHUQoragazPlitasi.webp'
+import artel2 from './assets/images/ArtelEverest12konditsioneri.webp'
+import artel3 from './assets/images/ArtelJM-611SharbatSiqqichi.png'
+import artel4 from './assets/images/ArtelKE-8813elektrChoynagi.png'
+import artel5 from './assets/images/ArtellSI-2780Dazmoli.jpg'
+import artel6 from './assets/images/ArtelTG90PNature029kgYarimavtomatKiryuvishMashinasi.webp'
+import artel7 from './assets/images/ArtelTT70P7Kg(yashil,ko‘k,qizil,Siyohrang)yarimAvtomatkirYuvishmashinasi.webp'
+
+export const artel = [
+  {
+    id: 1,
+    img: artel1,
+    title: "Artel Apetito 02-G CHU qora gaz plitasi " ,
+    cost: "2 999 000 so'm",
+    text: " Model: Apetito 02-G CHU",
+    brend:"Brend: Artel",
+  },
+  {
+    id:2,
+    img: artel2,
+    title: "Artel Everest 12 konditsioneri" ,
+    cost: "4 439 000 so'm",
+    text: " Model: SIDAW12HE",
+    brend:"Brend: Artel",
+  },
+  {
+    id:3,
+    img:artel3 ,
+    title: "Artel JM-611 sharbat siqqichi" ,
+    cost: "789 000 so'm",
+    text: " Model: JM-611",
+    brend:"Brend: Artel",
+  },
+  {
+    id:4,
+    img:artel4 ,
+    title: "Artel KE-8813 elektr choynagi" ,
+    cost: "289 000 so'm",
+    text: " Model: KE-8813",
+    brend:"Brend: Artel",
+  },
+  {
+    id:5,
+    img:artel5 ,
+    title: "Artel SI-2780 dazmoli" ,
+    cost: "289 000 so'm",
+    text: "Model: SI-2780",
+    brend:"Brend: Artel",
+  },
+  {
+    id:6,
+    img:artel6 ,
+    title: "Artel TG90P Nature 02 9 kg yarimavtomat kir yuvish mashinasi" ,
+    cost: "1 839 000 so'm",
+    text: " Model: TG90P Nature 02",
+    brend:"Brend: Artel",
+  },
+  {
+    id:7,
+    img:artel7 ,
+    title: "Artel TT70P 7 Kg yashil yarim avtomat kir yuvish mashinasi" ,
+    cost: "1 379 000 so'm",
+    text: " Model: TT70P",
+    brend:"Brend: Artel",
+  },
+]
 
 
 
