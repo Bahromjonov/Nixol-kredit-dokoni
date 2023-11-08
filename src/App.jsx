@@ -18,6 +18,7 @@ import NoutboklarLayout from './layouts/NoutboklarLayout'
 import Acer from './pages/Acer'
 import Asus from './pages/Asus'
 import MaishiyTexnikalarLayouts from './layouts/MaishiyTexnikalarLayouts'
+import PageNotFound from './pages/PageNotFound'
 
 function App() {
 
@@ -55,6 +56,7 @@ function App() {
         <Route path='mebellar' element={<MaishiyTexnikalar />} />
         <Route path='qurilishAsboblari' element={<QurilishAsboblari />} />
         <Route path='aloqa' element={<Aloqa />} />
+        <Route path='*' element={<PageNotFound/>}/>
       </Route>
     )
   )
