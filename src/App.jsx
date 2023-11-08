@@ -19,6 +19,8 @@ import Acer from './pages/Acer'
 import Asus from './pages/Asus'
 import MaishiyTexnikalarLayouts from './layouts/MaishiyTexnikalarLayouts'
 import PageNotFound from './pages/PageNotFound'
+import Arshia from './pages/Arshia'
+import Artel from './pages/Artel'
 
 function App() {
 
@@ -38,7 +40,7 @@ function App() {
         <Route path='basket' element={<Basket likedCards={likedCards} removeCard={removeCard} basket={basket} setBasket={setBasket} />} />
         <Route path='heart' element={<Heart removeCard={removeCard} />} />
 
-        <Route path='/' element={<SmartfonLayout />} >
+        <Route path='smartfonlar' element={<SmartfonLayout />} >
           <Route path='smartfonlar' element={<Smartfonlar />} />
           <Route index element={<Honor />} />
           <Route path='honor' element={<Honor />} />
@@ -51,12 +53,15 @@ function App() {
           <Route path='asus' element={<Asus />} />
         </Route>
         <Route path='maishiyTexnikalar' element={<MaishiyTexnikalarLayouts />}>
-
+          <Route path='maishiyTexnikalar' element={<MaishiyTexnikalar/>} />
+          <Route index element={<Arshia />} />
+          <Route path='arshia' element={<Arshia />} />
+          <Route path='artel' element={<Artel/>}/>
         </Route>
         <Route path='mebellar' element={<MaishiyTexnikalar />} />
         <Route path='qurilishAsboblari' element={<QurilishAsboblari />} />
         <Route path='aloqa' element={<Aloqa />} />
-        <Route path='*' element={<PageNotFound/>}/>
+        <Route path='*' element={<PageNotFound />} />
       </Route>
     )
   )

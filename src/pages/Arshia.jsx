@@ -1,20 +1,19 @@
 import React from 'react'
 import { useDispatch } from 'react-redux';
-import { acer } from '../data';
+import { arshia } from '../data'
 import { addCard } from '../store/slice/cardSlice';
 
-
-const Acer = () => {
+const Arshia = () => {
     const dispatch = useDispatch();
 
     const addToCart = (product) => {
         dispatch(addCard(product));
     };
     return (
-        <section >
+        <section>
             <h3 className='mb-5'>Noutbuklar va aksessuarlar acer</h3>
             <ul className='grid grid-cols-3 gap-5 '>
-                {acer.map((e, id) => (
+                {arshia.map((e, id) => (
                     <li key={id} className='bg-white flex flex-col p-6 w-[320px] h-full max-h-[600px] rounded-lg hover:shadow-lg duration-500'>
                         <div className='flex justify-center mb-5'>
                             <img className=' h-200' src={e.img} alt={e.id} />
@@ -46,4 +45,4 @@ const Acer = () => {
     )
 }
 
-export default Acer
+export default Arshia

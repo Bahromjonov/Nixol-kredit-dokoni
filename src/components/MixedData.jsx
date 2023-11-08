@@ -72,7 +72,7 @@ const MixedData = ({ likedCards, setLikedCards }) => {
             <li key={id} data-aos="fade-up"
               data-aos-anchor-placement="top-center">
 
-              <div className={`bg-white p-6 h-full max-h-[600px] rounded-lg hover:shadow-lg relative ${cardStates[id] ? 'liked' : 'not-liked'} flex flex-col justify-end`}>
+              <div className={`bg-white p-6 h-full max-h-[600px] rounded-lg hover:shadow-lg relative ${cardStates[id] ? 'liked' : 'not-liked'} flex flex-col justify-end duration-500`}>
                 <div className='flex justify-center  relative'>
 
                   <div>

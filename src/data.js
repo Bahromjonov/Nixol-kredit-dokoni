@@ -332,6 +332,7 @@ export const asus = [
     brend:"Brend: ASUS",
   },
 ]
+
 import acer1 from './assets/images/AcerA315510P3652.webp'
 import acer2 from './assets/images/AcerAspire3.webp'
 import acer3 from './assets/images/AcerCorei5-1135.webp'
@@ -390,7 +391,63 @@ export const acer = [
   },
 ]
 
-
+import arshia1 from './assets/images/Arshia8008Blenderi.webp' 
+import arshia2 from './assets/images/ArshiaASM1909-4001KosaliMikseri.webp' 
+import arshia3 from './assets/images/ArshiaBugDazmoli.webp' 
+import arshia4 from './assets/images/ArshiaDazmoli.webp' 
+import arshia5 from './assets/images/ArshiaGo‘shtqiymalagichi.webp' 
+import arshia6 from './assets/images/ARSHIAOH786-2503MoyliIsitgichi.webp' 
+ 
+export const arshia = [
+  {
+    id: 1,
+    img: arshia1,
+    title: "Arshia AS1911-8008 blenderi" ,
+    cost: "299 000 so'm",
+    text: " Model: AS1911-8008",
+    brend:"Brend: Arshia",
+  },
+  {
+    id: 2,
+    img: arshia2,
+    title: "Arshia ASM1909-4001 Kosali mikseri" ,
+    cost: "1 299 000 so'm",
+    text: " Model: ASM1909-4001",
+    brend:"Brend: Arshia",
+  },
+  {
+    id: 3,
+    img: arshia3,
+    title: "Arshia AS-2108-9025 UT3 bug'li dazmoli" ,
+    cost: "699 000 so'm",
+    text: " Model: AS-2108-9025 UT3",
+    brend:"Brend: Arshia",
+  },
+  {
+    id: 4,
+    img: arshia4,
+    title: "ARSHIA AS1910-9003 dazmoli" ,
+    cost: "229 000 so'm",
+    text: " Model: AS1910-9003",
+    brend:"Brend: Arshia",
+  },
+  {
+    id: 5,
+    img: arshia5,
+    title: "Arshia MG 1401-2142 go‘shtqiymalagichi" ,
+    cost: "719 000 so'm",
+    text: " Model: MG 1401-2142",
+    brend:"Brend: Arshia",
+  },
+  {
+    id: 6,
+    img: arshia6,
+    title: "ARSHIA OH786-2503 moyli isitgichi" ,
+    cost: "1 099 000 so'm",
+    text: " Model: OH786-2503",
+    brend:"Brend: Arshia",
+  },
+]
 
 
 
