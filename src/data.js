@@ -516,7 +516,65 @@ export const artel = [
   },
 ]
 
+import oshxona1 from './assets/images/Akril-1oshxonaMebeli.webp' 
+import oshxona2 from './assets/images/Akril-2oshxonamebeli.webp' 
+import oshxona3 from './assets/images/Akril-5oshxonamebeli.webp' 
+import oshxona4 from './assets/images/Akril-7oshxonamebeli.webp' 
+import oshxona5 from './assets/images/Akril-9oshxonamebeli.webp' 
+import oshxona6 from './assets/images/Akril-12oshxonamebeli.webp' 
 
+export const oshxonaMebellari = [
+  {
+    id: 1,
+    img: oshxona1,
+    title: "Artel Apetito 02-G CHU qora gaz plitasi " ,
+    cost: "2 999 000 so'm",
+    text: " Model: Apetito 02-G CHU",
+    brend:"Brend: Artel",
+  },
+  {
+    id: 2,
+    img: oshxona2,
+    title: "Artel Apetito 02-G CHU qora gaz plitasi " ,
+    cost: "2 999 000 so'm",
+    text: " Model: Apetito 02-G CHU",
+    brend:"Brend: Artel",
+  },
+  {
+    id: 3,
+    img: oshxona3,
+    title: "Artel Apetito 02-G CHU qora gaz plitasi " ,
+    cost: "2 999 000 so'm",
+    text: " Model: Apetito 02-G CHU",
+    brend:"Brend: Artel",
+  },
+  {
+    id: 4,
+    img: oshxona4,
+    title: "Artel Apetito 02-G CHU qora gaz plitasi " ,
+    cost: "2 999 000 so'm",
+    text: " Model: Apetito 02-G CHU",
+    brend:"Brend: Artel",
+  },
+  {
+    id: 5,
+    img: oshxona5,
+    title: "Artel Apetito 02-G CHU qora gaz plitasi " ,
+    cost: "2 999 000 so'm",
+    text: " Model: Apetito 02-G CHU",
+    brend:"Brend: Artel",
+  },
+  {
+    id: 6,
+    img: oshxona6,
+    title: "Artel Apetito 02-G CHU qora gaz plitasi " ,
+    cost: "2 999 000 so'm",
+    text: " Model: Apetito 02-G CHU",
+    brend:"Brend: Artel",
+  },
+]
 
+export const smartfon = [...honor,...apple]
+export const noutbok = [...asus,...acer]
 export const arry = [...mixedData,...asus,...honor,...apple,]
 

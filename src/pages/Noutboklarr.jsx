@@ -1,20 +1,19 @@
 import React from 'react'
 import { useDispatch } from 'react-redux';
-import { artel } from '../data'
+import { noutbok } from '../data'
 import { addCard } from '../store/slice/cardSlice';
 
-
-const Artel = () => {
+const Noutboklarr = () => {
     const dispatch = useDispatch();
 
     const addToCart = (product) => {
         dispatch(addCard(product));
     }
-    return (
-        <section>
+  return (
+    <section>
             <h3 className='mb-5'>Noutbuklar va aksessuarlar artel</h3>
             <ul className='grid grid-cols-3 gap-5 '>
-                {artel.map((e, id) => (
+                {noutbok.map((e, id) => (
                     <li key={id} className='bg-white flex flex-col p-6 w-[320px] h-full max-h-[600px] rounded-lg hover:shadow-lg duration-500'>
                         <div className='flex justify-center mb-5'>
                             <img className=' h-200' src={e.img} alt={e.title} />
@@ -43,7 +42,7 @@ const Artel = () => {
                 ))}
             </ul>
         </section>
-    )
+  )
 }
 
-export default Artel
+export default Noutboklarr
