@@ -14,7 +14,7 @@ const IdishTovoqlar = () => {
             <NavLink to='fisman' className='NavLink'>Fissman</NavLink>
           </li> 
           <li>
-            <NavLink to='acer' className='NavLink'>Acer</NavLink>
+            <NavLink to='berghoff' className='NavLink'>BergHOFF</NavLink>
           </li>
         </ul>
       </nav>

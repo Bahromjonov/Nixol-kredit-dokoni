@@ -1,10 +1,9 @@
 import React from 'react'
 import { useDispatch } from 'react-redux';
-import { fisman } from '../data';
+import { berghoff } from '../data';
 import { addCard } from '../store/slice/cardSlice';
 
-
-const Fissman = () => {
+const BergHOOF = () => {
     const dispatch = useDispatch();
 
     const addToCart = (product) => {
@@ -12,9 +11,9 @@ const Fissman = () => {
     };
     return (
         <section>
-            <h3 className='mb-5'>Oshxona jihozlari fissman</h3>
+            <h3 className='mb-5'>Oshxona jihozlari berghoff</h3>
             <ul className='grid grid-cols-3 gap-5 '>
-                {fisman.map((e, id) => (
+                {berghoff.map((e, id) => (
                     <li key={id} className='bg-white flex flex-col p-6 w-[320px] h-full max-h-[600px] rounded-lg hover:shadow-lg duration-500'>
                         <div className='flex justify-center mb-5'>
                             <img className=' h-200' src={e.img} alt={e.title} />
@@ -46,4 +45,4 @@ const Fissman = () => {
     )
 }
 
-export default Fissman
+export default BergHOOF

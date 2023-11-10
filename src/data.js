@@ -162,7 +162,7 @@ export const honor = [
     title: "Honor X7a plus 6/128GB Midnight Black Smartfoni",
     cost: "2 479 000 so'm",
     text: " Model: B70",
-    brend:"Brend: Honor",
+    brend: "Brend: Honor",
     img: honor1,
   },
   {
@@ -170,7 +170,7 @@ export const honor = [
     title: "Honor 70 8/128GB Yashil Smartfoni",
     cost: "6 089 000 so'm",
     text: " Model: B70",
-    brend:"Brend: Honor",
+    brend: "Brend: Honor",
     img: honor2,
   },
   {
@@ -178,7 +178,7 @@ export const honor = [
     title: "Honor 90 12/512GB Yashil Smartfoni",
     cost: "6 739 000 so'm",
     text: " Model: HONOR 90",
-    brend:"Brend: Honor",
+    brend: "Brend: Honor",
     img: honor3,
   },
   {
@@ -186,38 +186,38 @@ export const honor = [
     title: "Honor X6a 4/128GB Ko'k Smartfoni",
     cost: "1 979 000 so'm",
     text: "Model:X6a ",
-    brend:"Brend: Honor",
+    brend: "Brend: Honor",
     img: honor4,
   },
   {
-    id:5 ,
+    id: 5,
     title: "Honor X8A 6/128GB Qora Smartfoni",
     cost: "2 659 000 so'm",
     text: "Model: X8A",
-    brend:"Brend: Honor",
+    brend: "Brend: Honor",
     img: honor5,
   },
   {
-    id:6 ,
+    id: 6,
     title: "Honor X9a 6/128GB Qora Smartfoni",
     cost: "4 199 000 so'm",
     text: "Model: X9a",
-    brend:"Brend: Honor",
+    brend: "Brend: Honor",
     img: honor6,
   },
   {
-    id:7 ,
+    id: 7,
     title: "Honor X9a 6/128GB Kumushrang Smartfoni",
     cost: "4 199 000 so'm",
     text: "Model: X9a",
-    brend:"Brend: Honor",
+    brend: "Brend: Honor",
     img: honor7,
   },
 
 ]
 
 import ipple14pro from './assets/images/iphone14pro.webp'
-import iphone15pro from './assets/images/iphone15pro.webp' 
+import iphone15pro from './assets/images/iphone15pro.webp'
 import iphone15promax from './assets/images/iphone15promax.webp'
 import iphone15promax1tb from './assets/images/iphone15promax1tb.webp'
 import iphone15promax128oq from './assets/images/iphone15promax128oq.webp'
@@ -229,15 +229,15 @@ export const apple = [
     title: "iPhone 14 Pro 128GB Deep Purple smartfoni",
     cost: "13 699 000 so'm",
     text: " Model: iPhone 14 Pro",
-    brend:"Brend: Apple",
-    img: ipple14pro,                                          
+    brend: "Brend: Apple",
+    img: ipple14pro,
   },
   {
     id: 2,
     title: "iPhone 15 Pro 256GB Ko'k Titanrang Smartfoni",
     cost: "15 289 000 so'm",
     text: " Model: iPhone 15 Pro",
-    brend:"Brend: Apple",
+    brend: "Brend: Apple",
     img: iphone15pro,
   },
   {
@@ -245,7 +245,7 @@ export const apple = [
     title: "iPhone 15 Pro max 256GB Titanrang Smartfoni",
     cost: "19 029 000 so'm",
     text: " Model: iPhone 15 Pro max",
-    brend:"Brend: Apple",
+    brend: "Brend: Apple",
     img: iphone15promax,
   },
   {
@@ -253,7 +253,7 @@ export const apple = [
     title: "iPhone 15 Pro max 1TB Titanrang Smartfoni",
     cost: "26 099 000 so'm",
     text: " Model: iPhone 15 Pro max",
-    brend:"Brend: Apple",
+    brend: "Brend: Apple",
     img: iphone15promax1tb,
   },
   {
@@ -261,7 +261,7 @@ export const apple = [
     title: "iPhone 15 Pro max 512GB Qora Titanrang Smartfoni",
     cost: "23 089 000 so'm",
     text: " Model: iPhone 15 Pro max",
-    brend:"Brend: Apple",
+    brend: "Brend: Apple",
     img: iphone15promax512qora,
   },
   {
@@ -269,13 +269,13 @@ export const apple = [
     title: "iPhone 15 Pro 128GB Oq Titanrang Smartfoni",
     cost: "15 699 000 so'm",
     text: " Model: iPhone 15 Pro ",
-    brend:"Brend: Apple",
+    brend: "Brend: Apple",
     img: iphone15promax128oq,
   },
-  
+
 ]
 
-import asus1 from './assets/images/asusExpertbooki58gb256gb.webp' 
+import asus1 from './assets/images/asusExpertbooki58gb256gb.webp'
 import asus2 from './assets/images/asusi58gb.webp'
 import asus3 from './assets/images/asusi516gb512gb.webp'
 import asus4 from './assets/images/asusi31000gb.webp'
@@ -286,50 +286,50 @@ export const asus = [
   {
     id: 1,
     img: asus1,
-    title: "Asus Expertbook B1500CEAE, Core I5-1135G7,DDR4 8Gb, SSD 256Gb, 15.6 FullHD IPS, Noutbuki" ,
+    title: "Asus Expertbook B1500CEAE, Core I5-1135G7,DDR4 8Gb, SSD 256Gb, 15.6 FullHD IPS, Noutbuki",
     cost: "5 909 000 so'm",
     text: " Model: B1500CEAE",
-    brend:"Brend: ASUS",
+    brend: "Brend: ASUS",
   },
   {
     id: 2,
     img: asus2,
-    title: "Asus X515E. Core I5-1135G1. DDR4 8GB. SSD512Gb. 15.6 FullHD IPS Noutbuki" ,
+    title: "Asus X515E. Core I5-1135G1. DDR4 8GB. SSD512Gb. 15.6 FullHD IPS Noutbuki",
     cost: "6 319 000 so'm",
     text: " Model: X515E",
-    brend:"Brend: ASUS",
+    brend: "Brend: ASUS",
   },
   {
     id: 3,
     img: asus3,
-    title: "Asus Expertbook B5402, Core I5-1155G7. DDR4 16GB. SSD 512Gb. 14 , windows 11 Noutbuki " ,
+    title: "Asus Expertbook B5402, Core I5-1155G7. DDR4 16GB. SSD 512Gb. 14 , windows 11 Noutbuki ",
     cost: "7 709 000 so'm",
     text: " Model: B5402",
-    brend:"Brend: ASUS",
+    brend: "Brend: ASUS",
   },
   {
     id: 4,
     img: asus4,
-    title: "Asus Expertbook B5402, Core I5-1155G7. DDR4 16GB. SSD 512Gb. 14 , windows 11 Noutbuki " ,
+    title: "Asus Expertbook B5402, Core I5-1155G7. DDR4 16GB. SSD 512Gb. 14 , windows 11 Noutbuki ",
     cost: "7 709 000 so'm",
     text: " Model: B5402",
-    brend:"Brend: ASUS",
+    brend: "Brend: ASUS",
   },
   {
     id: 6,
     img: asus5,
-    title: "Asus TUF Gaming FA507RE-A15 Ryzen R7-6800H. DDR4 8GB. SSD 512Gb. 4GB RTX13050Ti. 15.6. win 11 Noutbuki " ,
+    title: "Asus TUF Gaming FA507RE-A15 Ryzen R7-6800H. DDR4 8GB. SSD 512Gb. 4GB RTX13050Ti. 15.6. win 11 Noutbuki ",
     cost: "7 709 000 so'm",
     text: " Model: B5402",
-    brend:"Brend: ASUS",
+    brend: "Brend: ASUS",
   },
   {
     id: 7,
     img: asus6,
-    title: "Asus Expertbook B5402, Core I5-1155G7. DDR4 16GB. SSD 512Gb. 14 , windows 11 Noutbuki " ,
+    title: "Asus Expertbook B5402, Core I5-1155G7. DDR4 16GB. SSD 512Gb. 14 , windows 11 Noutbuki ",
     cost: "11 479 000 so'm",
     text: " Model: TUF Gaming FA507RE-A15",
-    brend:"Brend: ASUS",
+    brend: "Brend: ASUS",
   },
 ]
 
@@ -344,108 +344,108 @@ export const acer = [
   {
     id: 1,
     img: acer1,
-    title: "Acer A315-510P-3652, Core I3-N305, DDR4 4GB, SSD 256GB, 15.6 FullHD, Pure Silver Noutbuki" ,
+    title: "Acer A315-510P-3652, Core I3-N305, DDR4 4GB, SSD 256GB, 15.6 FullHD, Pure Silver Noutbuki",
     cost: "3 989 000 so'm",
     text: " Model: A315-510P-3652",
-    brend:"Brend: Acer",
+    brend: "Brend: Acer",
   },
   {
     id: 2,
     img: acer2,
-    title: "Acer Aspire 3 A315-510P, core I3-N305, DDR4 8GB, SSD 256GB, FullHD 15.6 Noutbuki " ,
+    title: "Acer Aspire 3 A315-510P, core I3-N305, DDR4 8GB, SSD 256GB, FullHD 15.6 Noutbuki ",
     cost: "4 219 000 so'm",
     text: " Model: Aspire 3 A315-510",
-    brend:"Brend: Acer",
+    brend: "Brend: Acer",
   },
   {
     id: 3,
     img: acer3,
-    title: "Acer Core i5-1135. DDR4 8Gb, SSD 512GB, FullHD 15.6 Silver Noutbuki" ,
+    title: "Acer Core i5-1135. DDR4 8Gb, SSD 512GB, FullHD 15.6 Silver Noutbuki",
     cost: "5 729 000 so'm",
     text: " Model: acer",
-    brend:"Brend: Acer",
+    brend: "Brend: Acer",
   },
   {
     id: 4,
     img: acer4,
-    title: "Acer EX25-54, core i3-1115G4, DDR4 8GB,SSD 256GB, 15.6 FHD noutbuki" ,
+    title: "Acer EX25-54, core i3-1115G4, DDR4 8GB,SSD 256GB, 15.6 FHD noutbuki",
     cost: "4 379 000 so'm",
     text: " Model: Extensa 2540",
-    brend:"Brend: Acer",
+    brend: "Brend: Acer",
   },
   {
     id: 5,
-    img: acer5  ,
-    title: "Acer Extensa 15 EX215| Core I5-1135G7| DDR4 8G| SSD 256Gb| Intel Iris Xe| 15.6 Noutbuki" ,
+    img: acer5,
+    title: "Acer Extensa 15 EX215| Core I5-1135G7| DDR4 8G| SSD 256Gb| Intel Iris Xe| 15.6 Noutbuki",
     cost: "5 039 000 so'm",
     text: " Model: Extensa 15 EX215",
-    brend:"Brend: Acer",
+    brend: "Brend: Acer",
   },
   {
     id: 6,
     img: acer6,
-    title: "Acer Nitro 5 AN515-57-919C. Core I9-11900H DDR4 16Gb. SSD 512 GB. RTX3060 6GB. 15.6 IPS. Black Noutbuki" ,
+    title: "Acer Nitro 5 AN515-57-919C. Core I9-11900H DDR4 16Gb. SSD 512 GB. RTX3060 6GB. 15.6 IPS. Black Noutbuki",
     cost: "14 079 000 so'm",
     text: " Model: Nitro 5 AN515-57-919C",
-    brend:"Brend: Acer",
+    brend: "Brend: Acer",
   },
 ]
 
-import arshia1 from './assets/images/Arshia8008Blenderi.webp' 
-import arshia2 from './assets/images/ArshiaASM1909-4001KosaliMikseri.webp' 
-import arshia3 from './assets/images/ArshiaBugDazmoli.webp' 
-import arshia4 from './assets/images/ArshiaDazmoli.webp' 
-import arshia5 from './assets/images/ArshiaGo‘shtqiymalagichi.webp' 
-import arshia6 from './assets/images/ARSHIAOH786-2503MoyliIsitgichi.webp' 
- 
+import arshia1 from './assets/images/Arshia8008Blenderi.webp'
+import arshia2 from './assets/images/ArshiaASM1909-4001KosaliMikseri.webp'
+import arshia3 from './assets/images/ArshiaBugDazmoli.webp'
+import arshia4 from './assets/images/ArshiaDazmoli.webp'
+import arshia5 from './assets/images/ArshiaGo‘shtqiymalagichi.webp'
+import arshia6 from './assets/images/ARSHIAOH786-2503MoyliIsitgichi.webp'
+
 export const arshia = [
   {
     id: 1,
     img: arshia1,
-    title: "Arshia AS1911-8008 blenderi" ,
+    title: "Arshia AS1911-8008 blenderi",
     cost: "299 000 so'm",
     text: " Model: AS1911-8008",
-    brend:"Brend: Arshia",
+    brend: "Brend: Arshia",
   },
   {
     id: 2,
     img: arshia2,
-    title: "Arshia ASM1909-4001 Kosali mikseri" ,
+    title: "Arshia ASM1909-4001 Kosali mikseri",
     cost: "1 299 000 so'm",
     text: " Model: ASM1909-4001",
-    brend:"Brend: Arshia",
+    brend: "Brend: Arshia",
   },
   {
     id: 3,
     img: arshia3,
-    title: "Arshia AS-2108-9025 UT3 bug'li dazmoli" ,
+    title: "Arshia AS-2108-9025 UT3 bug'li dazmoli",
     cost: "699 000 so'm",
     text: " Model: AS-2108-9025 UT3",
-    brend:"Brend: Arshia",
+    brend: "Brend: Arshia",
   },
   {
     id: 4,
     img: arshia4,
-    title: "ARSHIA AS1910-9003 dazmoli" ,
+    title: "ARSHIA AS1910-9003 dazmoli",
     cost: "229 000 so'm",
     text: " Model: AS1910-9003",
-    brend:"Brend: Arshia",
+    brend: "Brend: Arshia",
   },
   {
     id: 5,
     img: arshia5,
-    title: "Arshia MG 1401-2142 go‘shtqiymalagichi" ,
+    title: "Arshia MG 1401-2142 go‘shtqiymalagichi",
     cost: "719 000 so'm",
     text: " Model: MG 1401-2142",
-    brend:"Brend: Arshia",
+    brend: "Brend: Arshia",
   },
   {
     id: 6,
     img: arshia6,
-    title: "ARSHIA OH786-2503 moyli isitgichi" ,
+    title: "ARSHIA OH786-2503 moyli isitgichi",
     cost: "1 099 000 so'm",
     text: " Model: OH786-2503",
-    brend:"Brend: Arshia",
+    brend: "Brend: Arshia",
   },
 ]
 
@@ -461,176 +461,176 @@ export const artel = [
   {
     id: 1,
     img: artel1,
-    title: "Artel Apetito 02-G CHU qora gaz plitasi " ,
+    title: "Artel Apetito 02-G CHU qora gaz plitasi ",
     cost: "2 999 000 so'm",
     text: " Model: Apetito 02-G CHU",
-    brend:"Brend: Artel",
+    brend: "Brend: Artel",
   },
   {
-    id:2,
+    id: 2,
     img: artel2,
-    title: "Artel Everest 12 konditsioneri" ,
+    title: "Artel Everest 12 konditsioneri",
     cost: "4 439 000 so'm",
     text: " Model: SIDAW12HE",
-    brend:"Brend: Artel",
+    brend: "Brend: Artel",
   },
   {
-    id:3,
-    img:artel3 ,
-    title: "Artel JM-611 sharbat siqqichi" ,
+    id: 3,
+    img: artel3,
+    title: "Artel JM-611 sharbat siqqichi",
     cost: "789 000 so'm",
     text: " Model: JM-611",
-    brend:"Brend: Artel",
+    brend: "Brend: Artel",
   },
   {
-    id:4,
-    img:artel4 ,
-    title: "Artel KE-8813 elektr choynagi" ,
+    id: 4,
+    img: artel4,
+    title: "Artel KE-8813 elektr choynagi",
     cost: "289 000 so'm",
     text: " Model: KE-8813",
-    brend:"Brend: Artel",
+    brend: "Brend: Artel",
   },
   {
-    id:5,
-    img:artel5 ,
-    title: "Artel SI-2780 dazmoli" ,
+    id: 5,
+    img: artel5,
+    title: "Artel SI-2780 dazmoli",
     cost: "289 000 so'm",
     text: "Model: SI-2780",
-    brend:"Brend: Artel",
+    brend: "Brend: Artel",
   },
   {
-    id:6,
-    img:artel6 ,
-    title: "Artel TG90P Nature 02 9 kg yarimavtomat kir yuvish mashinasi" ,
+    id: 6,
+    img: artel6,
+    title: "Artel TG90P Nature 02 9 kg yarimavtomat kir yuvish mashinasi",
     cost: "1 839 000 so'm",
     text: " Model: TG90P Nature 02",
-    brend:"Brend: Artel",
+    brend: "Brend: Artel",
   },
   {
-    id:7,
-    img:artel7 ,
-    title: "Artel TT70P 7 Kg yashil yarim avtomat kir yuvish mashinasi" ,
+    id: 7,
+    img: artel7,
+    title: "Artel TT70P 7 Kg yashil yarim avtomat kir yuvish mashinasi",
     cost: "1 379 000 so'm",
     text: " Model: TT70P",
-    brend:"Brend: Artel",
+    brend: "Brend: Artel",
   },
 ]
 
-import oshxona1 from './assets/images/Akril-1oshxonaMebeli.webp' 
-import oshxona2 from './assets/images/Akril-2oshxonamebeli.webp' 
-import oshxona3 from './assets/images/Akril-5oshxonamebeli.webp' 
-import oshxona4 from './assets/images/Akril-7oshxonamebeli.webp' 
-import oshxona5 from './assets/images/Akril-9oshxonamebeli.webp' 
-import oshxona6 from './assets/images/Akril-12oshxonamebeli.webp' 
+import oshxona1 from './assets/images/Akril-1oshxonaMebeli.webp'
+import oshxona2 from './assets/images/Akril-2oshxonamebeli.webp'
+import oshxona3 from './assets/images/Akril-5oshxonamebeli.webp'
+import oshxona4 from './assets/images/Akril-7oshxonamebeli.webp'
+import oshxona5 from './assets/images/Akril-9oshxonamebeli.webp'
+import oshxona6 from './assets/images/Akril-12oshxonamebeli.webp'
 
 export const oshxonaMebellari = [
   {
     id: 1,
     img: oshxona1,
-    title: "Akril-1 oshxona mebeli" ,
+    title: "Akril-1 oshxona mebeli",
     cost: "3 529 000 so'm",
     text: " Model: Акрил-1",
-    brend:"Brend: ORIGINAL MEBEL ",
+    brend: "Brend: ORIGINAL MEBEL ",
   },
   {
     id: 2,
     img: oshxona2,
-    title:"Akril-2 oshxona mebeli" ,
+    title: "Akril-2 oshxona mebeli",
     cost: "3 529 000 so'm",
     text: " Model: Акрил-2",
-    brend:"Brend: ORIGINAL MEBEL",
+    brend: "Brend: ORIGINAL MEBEL",
   },
   {
     id: 3,
     img: oshxona3,
-    title: "Akril-5 oshxona mebeli" ,
+    title: "Akril-5 oshxona mebeli",
     cost: "3 529 000 so'm",
     text: " Model: Акрил-5",
-    brend:"Brend: ORIGINAL MEBEL",
+    brend: "Brend: ORIGINAL MEBEL",
   },
   {
     id: 4,
     img: oshxona4,
-    title: "Akril-7 oshxona mebeli" ,
+    title: "Akril-7 oshxona mebeli",
     cost: "3 529 000 so'm",
     text: " Model: Акрил-7",
-    brend:"Brend: ORIGINAL MEBEL",
+    brend: "Brend: ORIGINAL MEBEL",
   },
   {
     id: 5,
     img: oshxona5,
-    title: "Akril-9 oshxona mebeli" ,
+    title: "Akril-9 oshxona mebeli",
     cost: "3 529 000 so'm",
     text: " Model: Акрил-9",
-    brend:"Brend: ORIGINAL MEBEL",
+    brend: "Brend: ORIGINAL MEBEL",
   },
   {
     id: 6,
     img: oshxona6,
-    title: "Akril-12 oshxona mebeli" ,
+    title: "Akril-12 oshxona mebeli",
     cost: "3 529 000 so'm",
     text: " Model: Акрил-12",
-    brend:"Brend: ORIGINAL MEBEL",
+    brend: "Brend: ORIGINAL MEBEL",
   },
 ]
 
-import yumshoqMebel from './assets/images/YumshoqmebelDIPLOMAT.webp' 
-import yumshoqMebel2 from './assets/images/YumshoqmebelENGLAND.webp' 
-import yumshoqMebel3 from './assets/images/YumshoqmebelICEBERG.webp' 
-import yumshoqMebel4 from './assets/images/YumshoqmebelNICE.webp' 
-import yumshoqMebel5 from './assets/images/YumshoqmebelPARIS.webp' 
-import yumshoqMebel6 from './assets/images/YumshoqmebelRIGA(nihol).webp' 
+import yumshoqMebel from './assets/images/YumshoqmebelDIPLOMAT.webp'
+import yumshoqMebel2 from './assets/images/YumshoqmebelENGLAND.webp'
+import yumshoqMebel3 from './assets/images/YumshoqmebelICEBERG.webp'
+import yumshoqMebel4 from './assets/images/YumshoqmebelNICE.webp'
+import yumshoqMebel5 from './assets/images/YumshoqmebelPARIS.webp'
+import yumshoqMebel6 from './assets/images/YumshoqmebelRIGA(nihol).webp'
 
 export const yumshoqMebellar = [
   {
-    id:1,
+    id: 1,
     img: yumshoqMebel,
-    title: "Yumshoq mebel DIPLOMAT" ,
+    title: "Yumshoq mebel DIPLOMAT",
     cost: "12 459 000 so'm",
     text: " Model: DIPLOMAT",
-    brend:"Brend: SHOSH Mebel",
+    brend: "Brend: SHOSH Mebel",
   },
   {
-    id:2,
+    id: 2,
     img: yumshoqMebel2,
-    title: "Yumshoq mebel ENGLAND" ,
+    title: "Yumshoq mebel ENGLAND",
     cost: "6 499 000 so'm",
     text: " Model: ENGLAND",
-    brend:"Brend: SHOSH Mebel",
+    brend: "Brend: SHOSH Mebel",
   },
   {
-    id:3,
+    id: 3,
     img: yumshoqMebel3,
-    title: "Yumshoq mebel ICEBERG" ,
+    title: "Yumshoq mebel ICEBERG",
     cost: "11 919 000 so'm",
     text: " Model: ICEBERG",
-    brend:"Brend: SHOSH Mebel",
+    brend: "Brend: SHOSH Mebel",
   },
   {
-    id:4,
+    id: 4,
     img: yumshoqMebel4,
-    title: "Yumshoq mebel NICE" ,
+    title: "Yumshoq mebel NICE",
     cost: "11 919 000 so'm",
     text: " Model: NICE",
-    brend:"Brend: SHOSH Mebel",
+    brend: "Brend: SHOSH Mebel",
   },
   {
-    id:5,
+    id: 5,
     img: yumshoqMebel5,
-    title: "Yumshoq mebel PARIS" ,
+    title: "Yumshoq mebel PARIS",
     cost: "10 619 000 so'm",
     text: " Model: PARIS",
-    brend:"Brend: SHOSH Mebel",
+    brend: "Brend: SHOSH Mebel",
   },
   {
-    id:6,
+    id: 6,
     img: yumshoqMebel6,
-    title: "Yumshoq mebel RIGA (nihol)" ,
+    title: "Yumshoq mebel RIGA (nihol)",
     cost: "9 529 000 so'm",
     text: " Model: RIGA (Nihol)",
-    brend:"Brend: SHOSH Mebel",
+    brend: "Brend: SHOSH Mebel",
   },
-] 
+]
 
 import fisman1 from './assets/images/Fissman10x16smkrujka-unuchunElagi.webp'
 import fisman2 from './assets/images/Fissmanbambuklikurakchasi,CHEFsTOOLS27,5sm.webp'
@@ -641,59 +641,117 @@ import fisman6 from './assets/images/FissmanMauriskulrangqisqich-qoshig‘i,23sm
 
 export const fisman = [
   {
-    id:1,
+    id: 1,
     img: fisman1,
-    title: "Fissman 10x16 sm krujka - un uchun elagi" ,
+    title: "Fissman 10x16 sm krujka - un uchun elagi",
     cost: "89 000 so'm",
     text: " Model: 7669",
-    brend:"Brend: FISSMAN",
+    brend: "Brend: FISSMAN",
   },
   {
-    id:2,
-    img:fisman2 ,
-    title: "Fissman bambukli kurakchasi,CHEF's TOOLS 27,5 sm" ,
+    id: 2,
+    img: fisman2,
+    title: "Fissman bambukli kurakchasi,CHEF's TOOLS 27,5 sm",
     cost: "58 700 so'm",
     text: " Model: 1472",
-    brend:"Brend: FISSMAN",
+    brend: "Brend: FISSMAN",
   },
   {
-    id:3,
+    id: 3,
     img: fisman3,
-    title: "Fissman BIANCA 32 sm (neylon + silikon) kapkir, 1443" ,
+    title: "Fissman BIANCA 32 sm (neylon + silikon) kapkir, 1443",
     cost: "61 100 so'm",
     text: " Model: 1443",
-    brend:"Brend: FISSMAN",
+    brend: "Brend: FISSMAN",
   },
   {
-    id:4,
+    id: 4,
     img: fisman4,
-    title: "Fissman BIANCA silikon cho‘michi, 32 sm" ,
+    title: "Fissman BIANCA silikon cho‘michi, 32 sm",
     cost: "61 100 so'm",
     text: " Model: 1446",
-    brend:"Brend: FISSMAN",
+    brend: "Brend: FISSMAN",
   },
   {
-    id:5,
+    id: 5,
     img: fisman5,
-    title: "Fissman Chef’s tools silikon cho‘michi, 28 sm" ,
+    title: "Fissman Chef’s tools silikon cho‘michi, 28 sm",
     cost: "54 000 so'm",
     text: " Model: 1469",
-    brend:"Brend: FISSMAN",
+    brend: "Brend: FISSMAN",
   },
   {
-    id:6,
+    id: 6,
     img: fisman6,
-    title: "Fissman Mauris kulrang qisqich-qoshig‘i, 23 sm (neylon+silikon)" ,
+    title: "Fissman Mauris kulrang qisqich-qoshig‘i, 23 sm (neylon+silikon)",
     cost: "77 800 so'm",
     text: " Model: 11427",
-    brend:"Brend: FISSMAN",
+    brend: "Brend: FISSMAN",
   },
 ]
 
+import berghoff1 from './assets/images/BergHOFF4omonliQirg‘ichi,23sm.webp'
+import berghoff2 from './assets/images/BergHOFFEssentialsqisqichi,33sm.webp'
+import berghoff3 from './assets/images/BerghoffLeo24smchovlisi.webp'
+import berghoff4 from './assets/images/BerghoffLeokulrangshpateli,30sm.webp'
+import berghoff5 from './assets/images/BerghoffLEOsabzavotlarniTozalashuchunPichogi13sm.webp'
+import berghoff6 from './assets/images/BergHOFFqirg‘ichi,24sm.webp'
 
-export const smartfon = [...honor,...apple]
-export const noutbok = [...asus,...acer]
-export const texnikalar = [...arshia,...artel]
-export const mebel = [...oshxonaMebellari,...yumshoqMebellar]
-export const arry = [...mixedData,...asus,...honor,...apple,]
+export const berghoff = [
+  {
+    id: 1,
+    img: berghoff1,
+    title: "BergHOFF 4 tomonli qirg‘ichi, 23 sm",
+    cost: "159 000 so'm",
+    text: " Model: 1100038",
+    brend: "Brend: BergHOFF",
+  },
+  {
+    id: 2,
+    img: berghoff2,
+    title: "BergHOFF Essentials qisqichi, 33 sm",
+    cost: "139 000 so'm",
+    text: " Model: 1100010",
+    brend: "Brend: BergHOFF",
+  },
+  {
+    id: 3,
+    img: berghoff3,
+    title: "Berghoff Leo 24 sm chovlisi",
+    cost: "499 000 so'm",
+    text: " Model: 3950152",
+    brend: "Brend: BergHOFF",
+  },
+  {
+    id: 4,
+    img: berghoff4,
+    title: "Berghoff Leo kulrang shpateli, 30 sm",
+    cost: "159 000 so'm",
+    text: " Model: 3950156",
+    brend: "Brend: BergHOFF",
+  },
+  {
+    id: 5,
+    img: berghoff5,
+    title: "Berghoff LEO sabzavotlarni tozalash uchun pichog'i, 13 sm",
+    cost: "149 000 so'm",
+    text: " Model: 3950003",
+    brend: "Brend: BergHOFF",
+  },
+  {
+    id: 6,
+    img: berghoff6,
+    title: "BergHOFF qirg‘ichi, 24 sm",
+    cost: "169 000 so'm",
+    text: " Model: 1100034",
+    brend: "Brend: BergHOFF",
+  },
+]
+
+export const smartfon = [...honor, ...apple]
+export const noutbok = [...asus, ...acer]
+export const texnikalar = [...arshia, ...artel]
+export const mebel = [...oshxonaMebellari, ...yumshoqMebellar]
+export const idishlar = [...fisman, ...berghoff]
+export const arry = [...mixedData, ...asus, ...honor, ...apple,]
 
