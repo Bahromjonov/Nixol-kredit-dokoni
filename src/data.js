@@ -632,6 +632,64 @@ export const yumshoqMebellar = [
   },
 ] 
 
+import fisman1 from './assets/images/Fissman10x16smkrujka-unuchunElagi.webp'
+import fisman2 from './assets/images/Fissmanbambuklikurakchasi,CHEFsTOOLS27,5sm.webp'
+import fisman3 from './assets/images/FissmanBIANCA32sm(neylon+silikon)kapkir,1443.webp'
+import fisman4 from './assets/images/FissmanBIANCAsilikoncho‘michi,32sm.webp'
+import fisman5 from './assets/images/FissmanChef’stoolssilikoncho‘michi,28sm.webp'
+import fisman6 from './assets/images/FissmanMauriskulrangqisqich-qoshig‘i,23sm(neylon+silikon).webp'
+
+export const fisman = [
+  {
+    id:1,
+    img: fisman1,
+    title: "Fissman 10x16 sm krujka - un uchun elagi" ,
+    cost: "89 000 so'm",
+    text: " Model: 7669",
+    brend:"Brend: FISSMAN",
+  },
+  {
+    id:2,
+    img:fisman2 ,
+    title: "Fissman bambukli kurakchasi,CHEF's TOOLS 27,5 sm" ,
+    cost: "58 700 so'm",
+    text: " Model: 1472",
+    brend:"Brend: FISSMAN",
+  },
+  {
+    id:3,
+    img: fisman3,
+    title: "Fissman BIANCA 32 sm (neylon + silikon) kapkir, 1443" ,
+    cost: "61 100 so'm",
+    text: " Model: 1443",
+    brend:"Brend: FISSMAN",
+  },
+  {
+    id:4,
+    img: fisman4,
+    title: "Fissman BIANCA silikon cho‘michi, 32 sm" ,
+    cost: "61 100 so'm",
+    text: " Model: 1446",
+    brend:"Brend: FISSMAN",
+  },
+  {
+    id:5,
+    img: fisman5,
+    title: "Fissman Chef’s tools silikon cho‘michi, 28 sm" ,
+    cost: "54 000 so'm",
+    text: " Model: 1469",
+    brend:"Brend: FISSMAN",
+  },
+  {
+    id:6,
+    img: fisman6,
+    title: "Fissman Mauris kulrang qisqich-qoshig‘i, 23 sm (neylon+silikon)" ,
+    cost: "77 800 so'm",
+    text: " Model: 11427",
+    brend:"Brend: FISSMAN",
+  },
+]
+
 
 export const smartfon = [...honor,...apple]
 export const noutbok = [...asus,...acer]

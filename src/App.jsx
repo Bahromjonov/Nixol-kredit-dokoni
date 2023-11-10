@@ -8,7 +8,7 @@ import Heart from './pages/Heart'
 import Smartfonlar from './pages/Smartfonlar'
 import Noutboklar from './pages/Noutboklar'
 import MaishiyTexnikalar from './pages/MaishiyTexnikalar'
-import QurilishAsboblari from './pages/QurilishAsboblari'
+import QurilishAsboblari from './pages/IdishTovoqlar'
 import Aloqa from './pages/Aloqa'
 import { useState } from 'react'
 import Honor from './pages/Honor'
@@ -29,6 +29,10 @@ import Noutboklarr from './pages/Noutboklarr'
 import Texnikalar from './pages/Texnikalar'
 import Mebellarr from './pages/Mebellarr'
 import YumshoqMebellar from './pages/YumshoqMebellar'
+import IdishTovoqlarr from './pages/IdishTovoqlarr'
+import IdishTovoqlarLayout from './layouts/IdishTovoqlarLayout'
+import OshxonaJixozlari from './pages/OshxonaJixozlari'
+import Fissman from './pages/Fissman'
 
 function App() {
 
@@ -78,7 +82,12 @@ function App() {
           <Route path='yumshoq' element={<YumshoqMebellar />} />
         </Route>
 
-        <Route path='qurilishAsboblari' element={<QurilishAsboblari />} />
+        <Route path='idishTovoqlar' element={<IdishTovoqlarLayout />}>
+          <Route index element={<OshxonaJixozlari />} />
+          <Route path='idishtovoqlarr' element={<OshxonaJixozlari />} />
+          <Route path='fisman' element={<Fissman />} />
+        </Route>
+        
         <Route path='aloqa' element={<Aloqa />} />
         <Route path='*' element={<PageNotFound />} />
       </Route>

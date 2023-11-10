@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <nav className='main-container py-2 nav'>
+    <nav className='main-container py-3 nav'>
         <ul className='flex items-center justify-between font-bold flex-wrap'>
             <li>
                 <NavLink to='smartfonlar'>Smartfonlar</NavLink>
@@ -18,7 +18,7 @@ const Navbar = () => {
                 <NavLink to='mebellar'>Mebellar</NavLink>
             </li>
             <li>
-                <NavLink to='qurilishAsboblari'>Qurilish asboblari</NavLink>
+                <NavLink to='idishTovoqlar'>Idish-tovoqlar</NavLink>
             </li>
             <li>
                 <NavLink to='aloqa'>Aloqa</NavLink>
