@@ -85,3 +85,7 @@ h4 {
   padding: 5px;
   border-radius: 8px;
 }
+.swiper-container {
+  width: 100%;
+  margin:auto; /* Chapga ko'chirish uchun centerlash */
+}

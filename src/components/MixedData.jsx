@@ -29,6 +29,7 @@ import xiomi from '../assets/images/xiaomi.webp'
 
 const MixedData = ({ likedCards, setLikedCards }) => {
   const [cardStates, setCardStates] = useState(Array(mixedData.length).fill(false));
+  const [shuffledArr, setShuffledArr] = useState([]);
 
   const toggleCard = (index) => {
     try {
@@ -56,6 +57,8 @@ const MixedData = ({ likedCards, setLikedCards }) => {
     dispatch(addCard(product))
   }
 
+
+  
   useEffect(() => {
     // LocalStoragedan 'likedCards' ro'yxatini olish
     const storedLikedCards = JSON.parse(localStorage.getItem('likedCards')) || [];
@@ -63,13 +66,17 @@ const MixedData = ({ likedCards, setLikedCards }) => {
 
     // Aos initiatsiyasini chaqirish
     Aos.init();
-  }, [setLikedCards])
+
+    // Malumotlar yurakcha shuffling
+    const newShuffledArr = arry.sort(() => Math.random() - 0.5).slice(0, 8);
+    setShuffledArr(newShuffledArr);
+  }, [setLikedCards]);
   return (
     <div>
       <ul className='grid grid-cols-4 gap-5 '>
-        {arry.map((e, id) => {
+        {shuffledArr.map((e, id) => {
           return (
-            <li key={id} data-aos="fade-up"
+            <li key={intex} data-aos="fade-up"
               data-aos-anchor-placement="top-center">
 
               <div className={`bg-white p-6 h-full max-h-[600px] rounded-lg hover:shadow-lg relative ${cardStates[id] ? 'liked' : 'not-liked'} flex flex-col justify-end duration-500`}>
@@ -100,8 +107,8 @@ const MixedData = ({ likedCards, setLikedCards }) => {
                 <div className='space-y-2 mb-5 grow'>
                   <h2 className='font-bold mb-2'>{e.title}</h2>
                   <span className='cost'>{e.cost}</span>
-                  <p className='font-normal'>{e.text}</p>
-                  <p className='font-normal '>{e.text2}</p>
+                  <p className='font-normal'>{e.brend}</p>
+                  <p className='font-normal '>{e.text}</p>
                 </div>
 
                 {/* installment payment */}
@@ -138,9 +145,7 @@ const MixedData = ({ likedCards, setLikedCards }) => {
         // pagination={{ clickable: true }}
         autoplay={{
           delay: 3000,
-          disableOnInteraction: false,
-
-      }}
+          disableOnInteraction: false,}}
       loop={true}
       >
         <SwiperSlide>
