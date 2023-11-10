@@ -27,6 +27,8 @@ import OshxonaMebellari from './pages/OshxonaMebellari'
 import Smartfonlarr from './pages/Smartfonlarr'
 import Noutboklarr from './pages/Noutboklarr'
 import Texnikalar from './pages/Texnikalar'
+import Mebellarr from './pages/Mebellarr'
+import YumshoqMebellar from './pages/YumshoqMebellar'
 
 function App() {
 
@@ -48,12 +50,12 @@ function App() {
 
         <Route path='smartfonlar' element={<SmartfonLayout />} >
           <Route path='smartfonlar' element={<Smartfonlar />} />
-          <Route index element={<Smartfonlarr/>}/>
-          <Route path='smartfonlarr' element={<Smartfonlarr/>}/>
+          <Route index element={<Smartfonlarr />} />
+          <Route path='smartfonlarr' element={<Smartfonlarr />} />
           <Route path='honor' element={<Honor />} />
           <Route path='apple' element={<Apple />} />
         </Route>
-        
+
         <Route path='noutboklar' element={<NoutboklarLayout />}>
           <Route path='noutboklar' element={<Noutboklar />} />
           <Route index element={<Noutboklarr />} />
@@ -64,15 +66,16 @@ function App() {
         <Route path='maishiyTexnikalar' element={<MaishiyTexnikalarLayouts />}>
           <Route path='maishiyTexnikalar' element={<MaishiyTexnikalar />} />
           <Route index element={<Texnikalar />} />
-          <Route path='texnikalar' element={<Texnikalar/>}/>
+          <Route path='texnikalar' element={<Texnikalar />} />
           <Route path='arshia' element={<Arshia />} />
           <Route path='artel' element={<Artel />} />
         </Route>
         <Route path='mebellar' element={<MebellarLayout />}>
           <Route path='mebellar' element={<Mebellar />} />
-          <Route index element={<OshxonaMebellari />} />
+          <Route index element={<Mebellarr />} />
+          <Route path='mebellarr' element={<Mebellarr />} />
           <Route path='oshxonaMebellari' element={<OshxonaMebellari />} />
-
+          <Route path='yumshoq' element={<YumshoqMebellar />} />
         </Route>
 
         <Route path='qurilishAsboblari' element={<QurilishAsboblari />} />

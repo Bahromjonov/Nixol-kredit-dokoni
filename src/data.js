@@ -574,8 +574,68 @@ export const oshxonaMebellari = [
   },
 ]
 
+import yumshoqMebel from './assets/images/YumshoqmebelDIPLOMAT.webp' 
+import yumshoqMebel2 from './assets/images/YumshoqmebelENGLAND.webp' 
+import yumshoqMebel3 from './assets/images/YumshoqmebelICEBERG.webp' 
+import yumshoqMebel4 from './assets/images/YumshoqmebelNICE.webp' 
+import yumshoqMebel5 from './assets/images/YumshoqmebelPARIS.webp' 
+import yumshoqMebel6 from './assets/images/YumshoqmebelRIGA(nihol).webp' 
+
+export const yumshoqMebellar = [
+  {
+    id:1,
+    img: yumshoqMebel,
+    title: "Yumshoq mebel DIPLOMAT" ,
+    cost: "12 459 000 so'm",
+    text: " Model: DIPLOMAT",
+    brend:"Brend: SHOSH Mebel",
+  },
+  {
+    id:2,
+    img: yumshoqMebel2,
+    title: "Yumshoq mebel ENGLAND" ,
+    cost: "6 499 000 so'm",
+    text: " Model: ENGLAND",
+    brend:"Brend: SHOSH Mebel",
+  },
+  {
+    id:3,
+    img: yumshoqMebel3,
+    title: "Yumshoq mebel ICEBERG" ,
+    cost: "11 919 000 so'm",
+    text: " Model: ICEBERG",
+    brend:"Brend: SHOSH Mebel",
+  },
+  {
+    id:4,
+    img: yumshoqMebel4,
+    title: "Yumshoq mebel NICE" ,
+    cost: "11 919 000 so'm",
+    text: " Model: NICE",
+    brend:"Brend: SHOSH Mebel",
+  },
+  {
+    id:5,
+    img: yumshoqMebel5,
+    title: "Yumshoq mebel PARIS" ,
+    cost: "10 619 000 so'm",
+    text: " Model: PARIS",
+    brend:"Brend: SHOSH Mebel",
+  },
+  {
+    id:6,
+    img: yumshoqMebel6,
+    title: "Yumshoq mebel RIGA (nihol)" ,
+    cost: "9 529 000 so'm",
+    text: " Model: RIGA (Nihol)",
+    brend:"Brend: SHOSH Mebel",
+  },
+] 
+
+
 export const smartfon = [...honor,...apple]
 export const noutbok = [...asus,...acer]
 export const texnikalar = [...arshia,...artel]
+export const mebel = [...oshxonaMebellari,...yumshoqMebellar]
 export const arry = [...mixedData,...asus,...honor,...apple,]
 
