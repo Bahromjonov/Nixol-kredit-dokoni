@@ -26,6 +26,7 @@ import MebellarLayout from './layouts/MebellarLayout'
 import OshxonaMebellari from './pages/OshxonaMebellari'
 import Smartfonlarr from './pages/Smartfonlarr'
 import Noutboklarr from './pages/Noutboklarr'
+import Texnikalar from './pages/Texnikalar'
 
 function App() {
 
@@ -62,7 +63,8 @@ function App() {
         </Route>
         <Route path='maishiyTexnikalar' element={<MaishiyTexnikalarLayouts />}>
           <Route path='maishiyTexnikalar' element={<MaishiyTexnikalar />} />
-          <Route index element={<Arshia />} />
+          <Route index element={<Texnikalar />} />
+          <Route path='texnikalar' element={<Texnikalar/>}/>
           <Route path='arshia' element={<Arshia />} />
           <Route path='artel' element={<Artel />} />
         </Route>

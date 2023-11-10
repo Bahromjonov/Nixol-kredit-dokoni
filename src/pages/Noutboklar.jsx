@@ -8,7 +8,7 @@ const Noutboklar = () => {
       <nav>
         <ul className=' space-y-5  pt-5'>
           <li>
-            <NavLink to='noutboklarr' className='NavLink'>Noutboklar</NavLink>
+            <NavLink to='noutboklarr' className='NavLink'>Noutbuklar</NavLink>
           </li> 
           <li>
             <NavLink to='asus' className='NavLink'>Asus</NavLink>

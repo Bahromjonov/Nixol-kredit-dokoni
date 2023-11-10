@@ -12,7 +12,7 @@ const Artel = () => {
     }
     return (
         <section>
-            <h3 className='mb-5'>Noutbuklar va aksessuarlar artel</h3>
+            <h3 className='mb-5'>Maishiy texnikalar artel</h3>
             <ul className='grid grid-cols-3 gap-5 '>
                 {artel.map((e, id) => (
                     <li key={id} className='bg-white flex flex-col p-6 w-[320px] h-full max-h-[600px] rounded-lg hover:shadow-lg duration-500'>
