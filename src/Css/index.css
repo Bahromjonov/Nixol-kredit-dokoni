@@ -47,7 +47,7 @@ h4 {
 }
 .swiper-button-next,
 .swiper-button-prev {
-  display: flex;
+  display: none;
   transition: opacity 0.5s ease; 
   opacity: 0; 
 }
@@ -62,6 +62,7 @@ h4 {
   font-size: 20px;
   background-color: #fff;
   padding:20px 25px;
+  max-width: 100px;
   border-radius: 50%;
   color: #000;
 }
@@ -70,7 +71,8 @@ h4 {
   opacity: 1;
 }
 .brend{
-  width: 90px;
+  max-width: 90px;
+  max-height: 100px;
   height: 100px;
   border-radius: 8px;
   margin-right: auto;
@@ -84,8 +86,16 @@ h4 {
   background-color: #fff;
   padding: 5px;
   border-radius: 8px;
+  margin-right: 10px;
 }
 .swiper-container {
   width: 100%;
-  margin:auto; /* Chapga ko'chirish uchun centerlash */
+  margin:auto; 
+}
+
+@media screen and (min-width: 800px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: flex;
+  }
 }

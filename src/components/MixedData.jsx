@@ -58,7 +58,7 @@ const MixedData = ({ likedCards, setLikedCards }) => {
   }
 
 
-  
+
   useEffect(() => {
     // LocalStoragedan 'likedCards' ro'yxatini olish
     const storedLikedCards = JSON.parse(localStorage.getItem('likedCards')) || [];
@@ -73,7 +73,7 @@ const MixedData = ({ likedCards, setLikedCards }) => {
   }, [setLikedCards]);
   return (
     <div>
-      <ul className='grid grid-cols-4 gap-5 '>
+      <ul className='grid grid-cols-4 gap-5 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 300:grid-cols-1 mb-5'>
         {shuffledArr.map((e, id) => {
           return (
             <li key={intex} data-aos="fade-up"
@@ -136,17 +136,40 @@ const MixedData = ({ likedCards, setLikedCards }) => {
           );
         })}
       </ul>
-
+      <h2 className=' md:font-bold md:text-lg sm:font-semibold 300:font-semibold '>Hamkorlar</h2>
       <Swiper className='py-10 swi'
-        modules={[Navigation, Pagination, Scrollbar, A11y,Autoplay]}
+        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         spaceBetween={20}
         slidesPerView={6}
+        breakpoints={{
+          300:{
+            slidesPerView:1
+          },
+          500:{
+            slidesPerView:2
+          },
+          650:{
+            slidesPerView:3
+          },
+          900:{
+            slidesPerView:4
+          },
+          1050:{
+            slidesPerView:5
+          },
+          1300:{
+            slidesPerView:6
+          },
+        }}
+        pagination={{ clickable: true }}    
+
         navigation={true}
         // pagination={{ clickable: true }}
         autoplay={{
           delay: 3000,
-          disableOnInteraction: false,}}
-      loop={true}
+          disableOnInteraction: false,
+        }}
+        loop={true}
       >
         <SwiperSlide>
           <div className='brend-still'>
@@ -206,16 +229,16 @@ const MixedData = ({ likedCards, setLikedCards }) => {
         </SwiperSlide>
         <SwiperSlide>
           <div className='brend-still'>
-          <Link to='/'>
-            <img className='brend' src={intex} alt="itex logo image" />
-          </Link>
+            <Link to='/'>
+              <img className='brend' src={intex} alt="itex logo image" />
+            </Link>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className='brend-still'>
-          <Link to='/'>
-            <img className='brend' src={xiomi} alt="xiomi logo image" />
-          </Link>
+            <Link to='/'>
+              <img className='brend' src={xiomi} alt="xiomi logo image" />
+            </Link>
           </div>
         </SwiperSlide>
 

@@ -36,7 +36,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='text-center py-3'>
+            <div className='main-container text-center 300:text-start 500:text-center py-3'>
                 <p className='font-medium text-gray-500'>2020-2023 Internet-do’kon nixol.uz: Maishiy texnikalar va boshqalar.Mahsulotni yetkazib berish barcha viloyatlarda amalga oshiriladi. Barcha huquqlar himoyalangan.</p>
             </div>
         </section>

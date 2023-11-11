@@ -17,6 +17,11 @@ const Basket = () => {
       total += costInSom * product.count;
     });
   }
+  
+  useEffect(() => {
+    // Savatchadagi ma'lumotlarni localStorage'ga saqlash
+    localStorage.setItem('card', JSON.stringify(card));
+  }, [card]);
 
   const dispatch = useDispatch()
 

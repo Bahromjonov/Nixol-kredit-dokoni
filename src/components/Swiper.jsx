@@ -28,7 +28,7 @@ export default () => {
             loop={true}
             pagination={{ clickable: true }}    
         >
-            <Swiper className='swiprerr'>
+            <Swiper className='swiprerr '>
                 <SwiperSlide >
                     <img className='w-full h-  rounded-lg ' src={img} alt="maishiy texnikalar rasimi" />
                 </SwiperSlide>
@@ -38,10 +38,6 @@ export default () => {
                 <SwiperSlide>
                     <img className='w-full rounded-lg ' src={img3} alt="qol soatlar rasimi" />
                 </SwiperSlide>
-                <span className='start' slot="container-start">Container Start</span>
-                <span slot="container-end">Container End</span>
-                <span slot="wrapper-start">Wrapper Start</span>
-                <span slot="wrapper-end">Wrapper End</span>
             </Swiper>
         </Swiper>
     );
