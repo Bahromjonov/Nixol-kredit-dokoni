@@ -30,13 +30,13 @@ export default () => {
         >
             <Swiper className='swiprerr '>
                 <SwiperSlide >
-                    <img className='w-full 300:h-[150px]  rounded-lg ' src={img} alt="maishiy texnikalar rasimi" />
+                    <img className='w-full 300:h-[200px]  rounded-lg ' src={img} alt="maishiy texnikalar rasimi" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img className='w-full 300:h-[150px] rounded-lg ' src={img2} alt="noutboklar rasimi" />
+                    <img className='w-full 300:h-[200px] rounded-lg ' src={img2} alt="noutboklar rasimi" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img className='w-full 300:h-[150px] rounded-lg ' src={img3} alt="qol soatlar rasimi" />
+                    <img className='w-full 300:h-[200px] rounded-lg ' src={img3} alt="qol soatlar rasimi" />
                 </SwiperSlide>
             </Swiper>
         </Swiper>
