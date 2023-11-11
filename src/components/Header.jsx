@@ -8,24 +8,6 @@ import Navbar from './Navbar'
 
 const Header = ({ likedCards }) => {
 
-    const [scrolled, setScrolled] = useState(false);
-
-    // Add a scroll event listener
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 150) {
-                setScrolled(true);
-            } else {
-                setScrolled(false);
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
     const { card } = useSelector((store) => store.card)
 
     return (
@@ -37,7 +19,7 @@ const Header = ({ likedCards }) => {
                             <img width={100} height={50} src={img} alt="Nixol image" />
                         </Link>
                     </div>
-                    <ul className='flex space-x-5 mr-2' >
+                    <ul className=' space-x-5 mr-2 hidden 500:flex' >
                         {/* Hard icon */}
                         <li>
                             <Link to='heart' className='relative'>
@@ -73,6 +55,7 @@ const Header = ({ likedCards }) => {
                                 </svg>
                             </Link>
                         </li>
+
                     </ul>
                 </div>
                 <div>

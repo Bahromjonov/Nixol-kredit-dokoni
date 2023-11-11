@@ -57,8 +57,6 @@ const MixedData = ({ likedCards, setLikedCards }) => {
     dispatch(addCard(product))
   }
 
-
-
   useEffect(() => {
     // LocalStoragedan 'likedCards' ro'yxatini olish
     const storedLikedCards = JSON.parse(localStorage.getItem('likedCards')) || [];
@@ -76,8 +74,7 @@ const MixedData = ({ likedCards, setLikedCards }) => {
       <ul className='grid grid-cols-4 gap-5 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 300:grid-cols-1 mb-5'>
         {shuffledArr.map((e, id) => {
           return (
-            <li key={intex} data-aos="fade-up"
-              data-aos-anchor-placement="top-center">
+            <li key={intex}>
 
               <div className={`bg-white p-6 h-full max-h-[600px] rounded-lg hover:shadow-lg relative ${cardStates[id] ? 'liked' : 'not-liked'} flex flex-col justify-end duration-500`}>
                 <div className='flex justify-center  relative'>
