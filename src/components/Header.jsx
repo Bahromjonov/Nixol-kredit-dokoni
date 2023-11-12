@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
-import { Link, } from 'react-router-dom'
-
+import { Link, NavLink, } from 'react-router-dom'
+// import './styles.css'
 // Imgs
 import img from '../assets/images/Nixol.png'
 import Navbar from './Navbar'
@@ -9,7 +9,11 @@ import Navbar from './Navbar'
 const Header = ({ likedCards }) => {
 
     const { card } = useSelector((store) => store.card)
+    const [isOpen, setIsOpen] = useState(false);
 
+    const toggleHamburger = () => {
+        setIsOpen(!isOpen);
+    };
     return (
         <>
             <header className='bg-white py-3 z-10 sticky top-0'>
@@ -19,6 +23,7 @@ const Header = ({ likedCards }) => {
                             <img width={100} height={50} src={img} alt="Nixol image" />
                         </Link>
                     </div>
+                    
                     <ul className=' space-x-5 mr-2 hidden 500:flex' >
                         {/* Hard icon */}
                         <li>
@@ -57,13 +62,50 @@ const Header = ({ likedCards }) => {
                         </li>
 
                     </ul>
+
+                    <div className="relative hidden 500:hidden 300:flex ">
+                        <div className="cursor-pointer" onClick={toggleHamburger}>
+                            <div className="flex flex-col items-center">
+                                <div className={`w-6 h-0.5 bg-black transition-all duration-300 rounded-lg ${isOpen ? 'transform rotate-45 translate-y-2' : ''}`} />
+                                <div className={`w-6 h-0.5 bg-black my-1.5 transition-all duration-300 rounded-lg ${isOpen ? 'opacity-0' : ''}`} />
+                                <div className={`w-6 h-0.5 bg-black transition-all duration-300 rounded-lg ${isOpen ? 'transform -rotate-45 -translate-y-2' : ''}`} />
+                            </div>
+                        </div>
+
+                        {isOpen && (
+                            <div className="absolute top-10 right-0 h-screen  bg-white w-[200px] p-4 block shadow-md">
+                                <div className='w-screen blur-sm '></div>
+                                <ul className='flex flex-col space-y-5'>
+                                    <li>
+                                        <NavLink to='smartfonlar'>Smartfonlar</NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to='noutboklar'>Noutbuklar</NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to='maishiyTexnikalar'>Maishiy taxnikalar</NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to='mebellar'>Mebellar</NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to='idishTovoqlar'>Idish-tovoqlar</NavLink>
+                                    </li>
+                                    <li >
+                                        <NavLink to='aloqa'>Aloqa</NavLink>
+                                    </li>
+                                </ul>
+                            </div>
+                        )}
+                    </div>
+
                 </div>
                 <div>
                     <Navbar />
                 </div>
             </header>
 
-           
+
         </>
     )
 }

@@ -14,7 +14,6 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-
 // Imgs
 import acer from '../assets/images/acer.webp'
 import apple from '../assets/images/apple.webp'
@@ -75,7 +74,6 @@ const MixedData = ({ likedCards, setLikedCards }) => {
         {shuffledArr.map((e, id) => {
           return (
             <li key={intex}>
-
               <div className={`bg-white p-6 h-full max-h-[600px] rounded-lg hover:shadow-lg relative ${cardStates[id] ? 'liked' : 'not-liked'} flex flex-col justify-end duration-500`}>
                 <div className='flex justify-center  relative'>
 
